@@ -79,12 +79,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="login-email" translatesAutoresizingMaskIntoConstraints="NO" id="O2L-y1-56B">
-                                <rect key="frame" x="240" y="275" width="52" height="34"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="login-password" translatesAutoresizingMaskIntoConstraints="NO" id="2eE-da-U4p">
+                                <rect key="frame" x="257" y="347" width="19" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="login-password" translatesAutoresizingMaskIntoConstraints="NO" id="2eE-da-U4p">
-                                <rect key="frame" x="240" y="338" width="52" height="34"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="login-email" translatesAutoresizingMaskIntoConstraints="NO" id="O2L-y1-56B">
+                                <rect key="frame" x="248" y="282" width="36" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -94,7 +94,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="25" y="-34"/>
+            <point key="canvasLocation" x="23.664122137404579" y="-34.507042253521128"/>
         </scene>
     </scenes>
     <resources>
