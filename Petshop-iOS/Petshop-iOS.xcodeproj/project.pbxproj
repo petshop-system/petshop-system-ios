@@ -12,7 +12,7 @@
 		C5550E902B784D4800A84CF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5550E8E2B784D4800A84CF9 /* Main.storyboard */; };
 		C5550E922B784D4A00A84CF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5550E912B784D4A00A84CF9 /* Assets.xcassets */; };
 		C5B21F162B7867CF00C257B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B21F152B7867CF00C257B1 /* LaunchScreen.storyboard */; };
-		C5B21F182B786B0A00C257B1 /* Login.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5B21F172B786B0A00C257B1 /* Login.xib */; };
+		C5FCE7332B8AEBA200C4E735 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5FCE7322B8AEBA200C4E735 /* Login.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +24,7 @@
 		C5550E962B784D4A00A84CF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5550E9C2B784DAB00A84CF9 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
 		C5B21F152B7867CF00C257B1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C5B21F172B786B0A00C257B1 /* Login.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Login.xib; sourceTree = "<group>"; };
+		C5FCE7322B8AEBA200C4E735 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				C5B21F152B7867CF00C257B1 /* LaunchScreen.storyboard */,
-				C5B21F172B786B0A00C257B1 /* Login.xib */,
+				C5FCE7322B8AEBA200C4E735 /* Login.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -162,7 +162,7 @@
 				C5B21F162B7867CF00C257B1 /* LaunchScreen.storyboard in Resources */,
 				C5550E922B784D4A00A84CF9 /* Assets.xcassets in Resources */,
 				C5550E902B784D4800A84CF9 /* Main.storyboard in Resources */,
-				C5B21F182B786B0A00C257B1 /* Login.xib in Resources */,
+				C5FCE7332B8AEBA200C4E735 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
