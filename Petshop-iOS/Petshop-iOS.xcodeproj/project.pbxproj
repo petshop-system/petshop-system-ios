@@ -7,26 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C501F9F22C10EDAB00AF0A47 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C501F9F12C10EDAB00AF0A47 /* UIColor.swift */; };
+		C5178CF82C0739F400C6038F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5178CF72C0739F400C6038F /* LoginViewController.swift */; };
+		C5178CFD2C073F8A00C6038F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5178CFC2C073F8A00C6038F /* SceneDelegate.swift */; };
 		C5550E892B784D4700A84CF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5550E882B784D4700A84CF9 /* AppDelegate.swift */; };
-		C5550E8B2B784D4700A84CF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5550E8A2B784D4700A84CF9 /* SceneDelegate.swift */; };
-		C5550E902B784D4800A84CF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5550E8E2B784D4800A84CF9 /* Main.storyboard */; };
 		C5550E922B784D4A00A84CF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5550E912B784D4A00A84CF9 /* Assets.xcassets */; };
 		C5B21F162B7867CF00C257B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B21F152B7867CF00C257B1 /* LaunchScreen.storyboard */; };
-		C5FCE7332B8AEBA200C4E735 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5FCE7322B8AEBA200C4E735 /* Login.storyboard */; };
-		C5FCE7352B8AEC7000C4E735 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5FCE7342B8AEC7000C4E735 /* Register.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C501F9F12C10EDAB00AF0A47 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		C5178CF72C0739F400C6038F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C5178CFC2C073F8A00C6038F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C5550E852B784D4700A84CF9 /* Petshop-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Petshop-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5550E882B784D4700A84CF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C5550E8A2B784D4700A84CF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C5550E8F2B784D4800A84CF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C5550E912B784D4A00A84CF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5550E962B784D4A00A84CF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C5550E9C2B784DAB00A84CF9 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
 		C5B21F152B7867CF00C257B1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C5FCE7322B8AEBA200C4E735 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		C5FCE7342B8AEC7000C4E735 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +37,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C501F9F02C10ED9A00AF0A47 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C501F9F12C10EDAB00AF0A47 /* UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C5178CEC2C07386500C6038F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C5550E912B784D4A00A84CF9 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		C5178CED2C07389E00C6038F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C5178CEE2C0738A800C6038F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C5178CEF2C0738B300C6038F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C5178CF12C0738C900C6038F /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		C5178CF22C0738E600C6038F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		C5550E7C2B784D4700A84CF9 = {
 			isa = PBXGroup;
 			children = (
@@ -59,15 +107,17 @@
 		C5550E872B784D4700A84CF9 /* Petshop-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				C5B21F142B78663200C257B1 /* Networking */,
-				C5B21F132B78662900C257B1 /* Controllers */,
-				C5B21F122B78662100C257B1 /* Models */,
+				C501F9F02C10ED9A00AF0A47 /* Extensions */,
+				C5178CF22C0738E600C6038F /* Network */,
+				C5178CF12C0738C900C6038F /* Tests */,
+				C5178CEF2C0738B300C6038F /* ViewModels */,
+				C5178CEE2C0738A800C6038F /* Services */,
+				C5178CED2C07389E00C6038F /* Models */,
+				C5178CEC2C07386500C6038F /* Assets */,
 				C5B21F112B78661000C257B1 /* Views */,
-				C5550E882B784D4700A84CF9 /* AppDelegate.swift */,
-				C5550E8A2B784D4700A84CF9 /* SceneDelegate.swift */,
-				C5550E8E2B784D4800A84CF9 /* Main.storyboard */,
-				C5550E912B784D4A00A84CF9 /* Assets.xcassets */,
 				C5550E962B784D4A00A84CF9 /* Info.plist */,
+				C5178CFC2C073F8A00C6038F /* SceneDelegate.swift */,
+				C5550E882B784D4700A84CF9 /* AppDelegate.swift */,
 			);
 			path = "Petshop-iOS";
 			sourceTree = "<group>";
@@ -76,31 +126,9 @@
 			isa = PBXGroup;
 			children = (
 				C5B21F152B7867CF00C257B1 /* LaunchScreen.storyboard */,
-				C5FCE7322B8AEBA200C4E735 /* Login.storyboard */,
-				C5FCE7342B8AEC7000C4E735 /* Register.storyboard */,
+				C5178CF72C0739F400C6038F /* LoginViewController.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		C5B21F122B78662100C257B1 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		C5B21F132B78662900C257B1 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		C5B21F142B78663200C257B1 /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,9 +192,6 @@
 			files = (
 				C5B21F162B7867CF00C257B1 /* LaunchScreen.storyboard in Resources */,
 				C5550E922B784D4A00A84CF9 /* Assets.xcassets in Resources */,
-				C5550E902B784D4800A84CF9 /* Main.storyboard in Resources */,
-				C5FCE7332B8AEBA200C4E735 /* Login.storyboard in Resources */,
-				C5FCE7352B8AEC7000C4E735 /* Register.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,24 +202,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5178CF82C0739F400C6038F /* LoginViewController.swift in Sources */,
 				C5550E892B784D4700A84CF9 /* AppDelegate.swift in Sources */,
-				C5550E8B2B784D4700A84CF9 /* SceneDelegate.swift in Sources */,
+				C5178CFD2C073F8A00C6038F /* SceneDelegate.swift in Sources */,
+				C501F9F22C10EDAB00AF0A47 /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		C5550E8E2B784D4800A84CF9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C5550E8F2B784D4800A84CF9 /* Base */,
-				C5550E9C2B784DAB00A84CF9 /* pt-BR */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C5550E972B784D4A00A84CF9 /* Debug */ = {
@@ -328,16 +343,16 @@
 				DEVELOPMENT_TEAM = AJ85923B38;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Petshop-iOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -345,6 +360,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Matheus.Petshop-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -361,16 +380,16 @@
 				DEVELOPMENT_TEAM = AJ85923B38;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Petshop-iOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,6 +397,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Matheus.Petshop-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
