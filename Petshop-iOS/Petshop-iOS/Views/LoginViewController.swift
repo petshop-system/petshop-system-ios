@@ -37,6 +37,7 @@ class LoginViewController: UIViewController {
     let loginButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Entrar", for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 25)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitleColor(UIColor.white, for: .normal)
         button.layer.cornerRadius = 15
@@ -104,7 +105,6 @@ class LoginViewController: UIViewController {
 
         passwordTextField.rightView = passwordRightPaddingView
         passwordTextField.rightViewMode = .always
-
         passwordRightPaddingView.addSubview(passwordIcon)
         passwordIcon.frame = passwordRightPaddingView.bounds
 
@@ -148,10 +148,10 @@ class LoginViewController: UIViewController {
             forgotPasswordLabel.topAnchor.constraint(equalTo: passwordTextField.topAnchor, constant: 130),
             
             newUserLabel.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 180),
-                newUserLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 70),
+            newUserLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 70),
 
-                newUserButton.centerYAnchor.constraint(equalTo: newUserLabel.centerYAnchor),
-                newUserButton.leadingAnchor.constraint(equalTo: newUserLabel.trailingAnchor, constant: 8),
+            newUserButton.centerYAnchor.constraint(equalTo: newUserLabel.centerYAnchor),
+            newUserButton.leadingAnchor.constraint(equalTo: newUserLabel.trailingAnchor, constant: 8),
             
             companyLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             companyLabel.topAnchor.constraint(equalTo: passwordTextField.topAnchor, constant: 350),
