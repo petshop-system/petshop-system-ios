@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C501F9F22C10EDAB00AF0A47 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C501F9F12C10EDAB00AF0A47 /* UIColor.swift */; };
+		C501F9F22C10EDAB00AF0A47 /* UIColor+hexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C501F9F12C10EDAB00AF0A47 /* UIColor+hexString.swift */; };
 		C5178CF82C0739F400C6038F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5178CF72C0739F400C6038F /* LoginViewController.swift */; };
 		C5178CFD2C073F8A00C6038F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5178CFC2C073F8A00C6038F /* SceneDelegate.swift */; };
 		C52427332C276FFE0070C9C9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52427322C276FFE0070C9C9 /* LoginView.swift */; };
@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C501F9F12C10EDAB00AF0A47 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		C501F9F12C10EDAB00AF0A47 /* UIColor+hexString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hexString.swift"; sourceTree = "<group>"; };
 		C5178CF72C0739F400C6038F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C5178CFC2C073F8A00C6038F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C52427322C276FFE0070C9C9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		C501F9F02C10ED9A00AF0A47 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				C501F9F12C10EDAB00AF0A47 /* UIColor.swift */,
+				C501F9F12C10EDAB00AF0A47 /* UIColor+hexString.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -185,7 +185,7 @@
 				C5550E892B784D4700A84CF9 /* AppDelegate.swift in Sources */,
 				C5178CFD2C073F8A00C6038F /* SceneDelegate.swift in Sources */,
 				C52427332C276FFE0070C9C9 /* LoginView.swift in Sources */,
-				C501F9F22C10EDAB00AF0A47 /* UIColor.swift in Sources */,
+				C501F9F22C10EDAB00AF0A47 /* UIColor+hexString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
