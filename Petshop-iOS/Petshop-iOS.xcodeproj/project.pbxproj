@@ -10,6 +10,7 @@
 		C501F9F22C10EDAB00AF0A47 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C501F9F12C10EDAB00AF0A47 /* UIColor.swift */; };
 		C5178CF82C0739F400C6038F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5178CF72C0739F400C6038F /* LoginViewController.swift */; };
 		C5178CFD2C073F8A00C6038F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5178CFC2C073F8A00C6038F /* SceneDelegate.swift */; };
+		C52427332C276FFE0070C9C9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52427322C276FFE0070C9C9 /* LoginView.swift */; };
 		C5550E892B784D4700A84CF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5550E882B784D4700A84CF9 /* AppDelegate.swift */; };
 		C5550E922B784D4A00A84CF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5550E912B784D4A00A84CF9 /* Assets.xcassets */; };
 		C5B21F162B7867CF00C257B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B21F152B7867CF00C257B1 /* LaunchScreen.storyboard */; };
@@ -19,6 +20,7 @@
 		C501F9F12C10EDAB00AF0A47 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		C5178CF72C0739F400C6038F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C5178CFC2C073F8A00C6038F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C52427322C276FFE0070C9C9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C5550E852B784D4700A84CF9 /* Petshop-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Petshop-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5550E882B784D4700A84CF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5550E912B784D4A00A84CF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,6 +62,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		C52427352C2775930070C9C9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C5178CF72C0739F400C6038F /* LoginViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		C5550E7C2B784D4700A84CF9 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +89,7 @@
 		C5550E872B784D4700A84CF9 /* Petshop-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				C52427352C2775930070C9C9 /* ViewControllers */,
 				C501F9F02C10ED9A00AF0A47 /* Extensions */,
 				C5178CED2C07389E00C6038F /* Models */,
 				C5178CEC2C07386500C6038F /* Resources */,
@@ -94,7 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				C5B21F152B7867CF00C257B1 /* LaunchScreen.storyboard */,
-				C5178CF72C0739F400C6038F /* LoginViewController.swift */,
+				C52427322C276FFE0070C9C9 /* LoginView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -173,6 +184,7 @@
 				C5178CF82C0739F400C6038F /* LoginViewController.swift in Sources */,
 				C5550E892B784D4700A84CF9 /* AppDelegate.swift in Sources */,
 				C5178CFD2C073F8A00C6038F /* SceneDelegate.swift in Sources */,
+				C52427332C276FFE0070C9C9 /* LoginView.swift in Sources */,
 				C501F9F22C10EDAB00AF0A47 /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
