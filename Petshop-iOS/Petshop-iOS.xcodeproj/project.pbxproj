@@ -11,6 +11,7 @@
 		C5178CF82C0739F400C6038F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5178CF72C0739F400C6038F /* LoginViewController.swift */; };
 		C5178CFD2C073F8A00C6038F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5178CFC2C073F8A00C6038F /* SceneDelegate.swift */; };
 		C52427332C276FFE0070C9C9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52427322C276FFE0070C9C9 /* LoginView.swift */; };
+		C52427372C2777710070C9C9 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52427362C2777710070C9C9 /* CreateAccountView.swift */; };
 		C5550E892B784D4700A84CF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5550E882B784D4700A84CF9 /* AppDelegate.swift */; };
 		C5550E922B784D4A00A84CF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5550E912B784D4A00A84CF9 /* Assets.xcassets */; };
 		C5B21F162B7867CF00C257B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B21F152B7867CF00C257B1 /* LaunchScreen.storyboard */; };
@@ -21,6 +22,7 @@
 		C5178CF72C0739F400C6038F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C5178CFC2C073F8A00C6038F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C52427322C276FFE0070C9C9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C52427362C2777710070C9C9 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
 		C5550E852B784D4700A84CF9 /* Petshop-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Petshop-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5550E882B784D4700A84CF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5550E912B784D4A00A84CF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,6 +52,7 @@
 		C5178CEC2C07386500C6038F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C5B21F152B7867CF00C257B1 /* LaunchScreen.storyboard */,
 				C5550E912B784D4A00A84CF9 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -89,14 +92,14 @@
 		C5550E872B784D4700A84CF9 /* Petshop-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				C5B21F112B78661000C257B1 /* Views */,
 				C52427352C2775930070C9C9 /* ViewControllers */,
 				C501F9F02C10ED9A00AF0A47 /* Extensions */,
 				C5178CED2C07389E00C6038F /* Models */,
 				C5178CEC2C07386500C6038F /* Resources */,
-				C5B21F112B78661000C257B1 /* Views */,
-				C5550E962B784D4A00A84CF9 /* Info.plist */,
 				C5178CFC2C073F8A00C6038F /* SceneDelegate.swift */,
 				C5550E882B784D4700A84CF9 /* AppDelegate.swift */,
+				C5550E962B784D4A00A84CF9 /* Info.plist */,
 			);
 			path = "Petshop-iOS";
 			sourceTree = "<group>";
@@ -104,8 +107,8 @@
 		C5B21F112B78661000C257B1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C5B21F152B7867CF00C257B1 /* LaunchScreen.storyboard */,
 				C52427322C276FFE0070C9C9 /* LoginView.swift */,
+				C52427362C2777710070C9C9 /* CreateAccountView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C52427372C2777710070C9C9 /* CreateAccountView.swift in Sources */,
 				C5178CF82C0739F400C6038F /* LoginViewController.swift in Sources */,
 				C5550E892B784D4700A84CF9 /* AppDelegate.swift in Sources */,
 				C5178CFD2C073F8A00C6038F /* SceneDelegate.swift in Sources */,
@@ -330,8 +334,7 @@
 				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -367,8 +370,7 @@
 				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
