@@ -45,12 +45,12 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		C5178CEC2C07386500C6038F /* Assets */ = {
+		C5178CEC2C07386500C6038F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				C5550E912B784D4A00A84CF9 /* Assets.xcassets */,
 			);
-			path = Assets;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		C5178CED2C07389E00C6038F /* Models */ = {
@@ -58,34 +58,6 @@
 			children = (
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		C5178CEE2C0738A800C6038F /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		C5178CEF2C0738B300C6038F /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		C5178CF12C0738C900C6038F /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		C5178CF22C0738E600C6038F /* Network */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Network;
 			sourceTree = "<group>";
 		};
 		C5550E7C2B784D4700A84CF9 = {
@@ -108,12 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				C501F9F02C10ED9A00AF0A47 /* Extensions */,
-				C5178CF22C0738E600C6038F /* Network */,
-				C5178CF12C0738C900C6038F /* Tests */,
-				C5178CEF2C0738B300C6038F /* ViewModels */,
-				C5178CEE2C0738A800C6038F /* Services */,
 				C5178CED2C07389E00C6038F /* Models */,
-				C5178CEC2C07386500C6038F /* Assets */,
+				C5178CEC2C07386500C6038F /* Resources */,
 				C5B21F112B78661000C257B1 /* Views */,
 				C5550E962B784D4A00A84CF9 /* Info.plist */,
 				C5178CFC2C073F8A00C6038F /* SceneDelegate.swift */,
