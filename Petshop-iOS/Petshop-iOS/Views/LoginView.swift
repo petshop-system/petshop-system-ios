@@ -36,6 +36,9 @@ class LoginView: UIView {
         
         usernameTextField.placeholder = "Email"
         usernameTextField.borderStyle = .roundedRect
+        usernameTextField.layer.cornerRadius = 8
+        usernameTextField.layer.borderWidth = 1.0
+        usernameTextField.layer.borderColor = UIColor.lightGray.cgColor
         usernameTextField.translatesAutoresizingMaskIntoConstraints = false
         let emailIcon = UIImageView(image: UIImage(named: "user-icon"))
         emailIcon.contentMode = .center
@@ -48,6 +51,9 @@ class LoginView: UIView {
         passwordTextField.placeholder = "Senha"
         passwordTextField.borderStyle = .roundedRect
         passwordTextField.isSecureTextEntry = true
+        passwordTextField.layer.cornerRadius = 8
+        passwordTextField.layer.borderWidth = 1.0
+        passwordTextField.layer.borderColor = UIColor.lightGray.cgColor
         passwordTextField.translatesAutoresizingMaskIntoConstraints = false
         let passwordIcon = UIImageView(image: UIImage(named: "eye-icon"))
         passwordIcon.contentMode = .center
@@ -68,7 +74,7 @@ class LoginView: UIView {
         forgotPasswordLabel.textColor = .systemBlue
         forgotPasswordLabel.translatesAutoresizingMaskIntoConstraints = false
         
-        newUserLabel.text = "Não tem uma conta?"
+        newUserLabel.text = "Ainda não tem uma conta?"
         newUserLabel.textColor = .black
         newUserLabel.translatesAutoresizingMaskIntoConstraints = false
         
@@ -108,10 +114,10 @@ class LoginView: UIView {
             loginButton.heightAnchor.constraint(equalTo: usernameTextField.heightAnchor),
             
             forgotPasswordLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            forgotPasswordLabel.topAnchor.constraint(equalTo: passwordTextField.topAnchor, constant: 130),
+            forgotPasswordLabel.topAnchor.constraint(equalTo: passwordTextField.topAnchor, constant: 115),
             
-            newUserLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 70),
-            newUserLabel.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 180),
+            newUserLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 50),
+            newUserLabel.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 280),
             
             newUserButton.centerYAnchor.constraint(equalTo: newUserLabel.centerYAnchor),
             newUserButton.leadingAnchor.constraint(equalTo: newUserLabel.trailingAnchor, constant: 8),
