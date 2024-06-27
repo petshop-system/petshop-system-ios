@@ -65,6 +65,7 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		C52427352C2775930070C9C9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +74,8 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> master
 		C5550E7C2B784D4700A84CF9 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +95,12 @@
 		C5550E872B784D4700A84CF9 /* Petshop-iOS */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
+=======
+				C501F9F02C10ED9A00AF0A47 /* Extensions */,
+				C5178CED2C07389E00C6038F /* Models */,
+				C5178CEC2C07386500C6038F /* Resources */,
+>>>>>>> master
 				C5B21F112B78661000C257B1 /* Views */,
 				C52427352C2775930070C9C9 /* ViewControllers */,
 				C501F9F02C10ED9A00AF0A47 /* Extensions */,
