@@ -37,7 +37,7 @@ class LoginView: UIView {
         usernameTextField.placeholder = "Email"
         usernameTextField.borderStyle = .roundedRect
         usernameTextField.translatesAutoresizingMaskIntoConstraints = false
-        let emailIcon = UIImageView(image: UIImage(named: "email-icon"))
+        let emailIcon = UIImageView(image: UIImage(named: "user-icon"))
         emailIcon.contentMode = .center
         let rightPaddingView = UIView(frame: CGRect(x: 0, y: 0, width: 40, height: emailIcon.bounds.height))
         rightPaddingView.addSubview(emailIcon)
@@ -49,7 +49,7 @@ class LoginView: UIView {
         passwordTextField.borderStyle = .roundedRect
         passwordTextField.isSecureTextEntry = true
         passwordTextField.translatesAutoresizingMaskIntoConstraints = false
-        let passwordIcon = UIImageView(image: UIImage(named: "password-icon"))
+        let passwordIcon = UIImageView(image: UIImage(named: "eye-icon"))
         passwordIcon.contentMode = .center
         let passwordRightPaddingView = UIView(frame: CGRect(x: 0, y: 0, width: 40, height: passwordIcon.bounds.height))
         passwordRightPaddingView.addSubview(passwordIcon)
@@ -68,10 +68,6 @@ class LoginView: UIView {
         forgotPasswordLabel.textColor = .systemBlue
         forgotPasswordLabel.translatesAutoresizingMaskIntoConstraints = false
         
-        companyLabel.text = "PETSHOP SYSTEM 2024 ®"
-        companyLabel.textColor = .systemBlue
-        companyLabel.translatesAutoresizingMaskIntoConstraints = false
-        
         newUserLabel.text = "Não tem uma conta?"
         newUserLabel.textColor = .black
         newUserLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -85,7 +81,6 @@ class LoginView: UIView {
         addSubview(passwordTextField)
         addSubview(loginButton)
         addSubview(forgotPasswordLabel)
-        addSubview(companyLabel)
         addSubview(newUserLabel)
         addSubview(newUserButton)
     }
@@ -99,7 +94,7 @@ class LoginView: UIView {
             
             usernameTextField.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             usernameTextField.topAnchor.constraint(equalTo: logo.bottomAnchor, constant: 20),
-            usernameTextField.widthAnchor.constraint(equalToConstant: 200),
+            usernameTextField.widthAnchor.constraint(equalToConstant: 327),
             usernameTextField.heightAnchor.constraint(equalToConstant: 40),
             
             passwordTextField.centerXAnchor.constraint(equalTo: self.centerXAnchor),
@@ -110,7 +105,7 @@ class LoginView: UIView {
             loginButton.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             loginButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 20),
             loginButton.widthAnchor.constraint(equalTo: usernameTextField.widthAnchor),
-            loginButton.heightAnchor.constraint(equalToConstant: 50),
+            loginButton.heightAnchor.constraint(equalTo: usernameTextField.heightAnchor),
             
             forgotPasswordLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             forgotPasswordLabel.topAnchor.constraint(equalTo: passwordTextField.topAnchor, constant: 130),
@@ -120,9 +115,6 @@ class LoginView: UIView {
             
             newUserButton.centerYAnchor.constraint(equalTo: newUserLabel.centerYAnchor),
             newUserButton.leadingAnchor.constraint(equalTo: newUserLabel.trailingAnchor, constant: 8),
-            
-            companyLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            companyLabel.topAnchor.constraint(equalTo: passwordTextField.topAnchor, constant: 350),
         ])
     }
 }

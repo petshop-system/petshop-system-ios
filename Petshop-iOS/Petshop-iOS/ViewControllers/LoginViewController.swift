@@ -13,7 +13,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor(hex: "#E2E8F0")
+        view.backgroundColor = UIColor(hex: "#FAFAFA")
         
         view.addSubview(loginView)
         loginView.translatesAutoresizingMaskIntoConstraints = false
