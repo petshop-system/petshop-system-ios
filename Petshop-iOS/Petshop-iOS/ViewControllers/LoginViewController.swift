@@ -38,7 +38,8 @@ class LoginViewController: UIViewController {
     }
     
     @objc func createAccount() {
-        print("aqui o user vai criar uma conta")
+        let aboutUsVC = AboutUsViewController()
+        navigationController?.pushViewController(aboutUsVC, animated: true)
     }
     
     @objc func forgotPasswordTapped() {

@@ -16,10 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        let loginViewController = LoginViewController()
-      
-        window?.rootViewController = loginViewController
+        let loginVC = LoginViewController()
+        let navigationController = UINavigationController(rootViewController: loginVC)
         
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
         
         return true
