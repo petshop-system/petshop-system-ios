@@ -26,15 +26,14 @@ class AboutUsView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setupView()
+        setupUI()
     }
     
     required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        setupView()
+       fatalError("(init(coder:) has not been implemented")
     }
-    
-    private func setupView() {
+   
+    private func setupUI() {
         backgroundColor = UIColor(hex: "42A2D9")
         
         addSubview(catDogImageView)

@@ -15,15 +15,15 @@ class CardView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setupView()
+        setupUI()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        setupView()
+        setupUI()
     }
     
-    private func setupView() {
+    private func setupUI() {
         backgroundColor = UIColor(hex: "#FAFAFA")
         layer.cornerRadius = 12
         
