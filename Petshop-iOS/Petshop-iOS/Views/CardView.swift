@@ -27,7 +27,7 @@ class CardView: UIView {
         layer.cornerRadius = 12
         
         cardImageContainer.backgroundColor = UIColor(hex: "#FAFAFA")
-        cardImageContainer.layer.cornerRadius = 50
+        cardImageContainer.layer.cornerRadius = 40
         cardImageContainer.layer.masksToBounds = true
         cardImageContainer.translatesAutoresizingMaskIntoConstraints = false
         addSubview(cardImageContainer)
@@ -45,7 +45,7 @@ class CardView: UIView {
         
         NSLayoutConstraint.activate([
             cardImageContainer.centerXAnchor.constraint(equalTo: centerXAnchor),
-            cardImageContainer.widthAnchor.constraint(equalToConstant: 100),
+            cardImageContainer.widthAnchor.constraint(equalToConstant: 80),
             cardImageContainer.heightAnchor.constraint(equalTo: cardImageContainer.widthAnchor),
             cardImageContainer.topAnchor.constraint(equalTo: topAnchor, constant: -60),
             

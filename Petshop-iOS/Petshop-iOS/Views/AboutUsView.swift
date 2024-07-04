@@ -38,15 +38,15 @@ class AboutUsView: UIView {
         
         addSubview(catDogImageView)
         NSLayoutConstraint.activate([
-            catDogImageView.centerXAnchor.constraint(equalTo: centerXAnchor),
-            catDogImageView.centerYAnchor.constraint(equalTo: centerYAnchor),
+            catDogImageView.centerXAnchor.constraint(equalTo: centerXAnchor, constant: 30),
+            catDogImageView.centerYAnchor.constraint(equalTo: centerYAnchor, constant: -100),
             catDogImageView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 1.2),
             catDogImageView.heightAnchor.constraint(equalTo: catDogImageView.widthAnchor)
         ])
         
         addSubview(cardView)
                 NSLayoutConstraint.activate([
-                    cardView.topAnchor.constraint(equalTo: catDogImageView.bottomAnchor, constant: -98),
+                    cardView.topAnchor.constraint(equalTo: catDogImageView.bottomAnchor, constant: -80),
                     cardView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0),
                     cardView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0),
                     cardView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0)
