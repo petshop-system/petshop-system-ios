@@ -8,10 +8,9 @@
 import UIKit
 
 class CardView: UIView {
+    let cardImageContainer = UIView()
     let cardImage = UIImageView()
     let cardTitle = UILabel()
-    let cardDescription = UILabel()
-    let forwardButton = UIButton(type: .system)
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -27,16 +26,35 @@ class CardView: UIView {
         backgroundColor = UIColor(hex: "#FAFAFA")
         layer.cornerRadius = 12
         
-        addSubview(cardImage)
+        cardImageContainer.backgroundColor = UIColor(hex: "#FAFAFA")
+        cardImageContainer.layer.cornerRadius = 50
+        cardImageContainer.layer.masksToBounds = true
+        cardImageContainer.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(cardImageContainer)
+        
+        cardImage.contentMode = .scaleAspectFill
+        cardImage.clipsToBounds = true
+        cardImage.layer.cornerRadius = 14
+        cardImage.translatesAutoresizingMaskIntoConstraints = false
+        cardImageContainer.addSubview(cardImage)
+
+        cardTitle.textAlignment = .center
+        cardTitle.textColor = UIColor(hex: "#39434F")
+        cardTitle.translatesAutoresizingMaskIntoConstraints = false
         addSubview(cardTitle)
         
         NSLayoutConstraint.activate([
-            cardImage.topAnchor.constraint(equalTo: topAnchor, constant: 16),
-            cardImage.centerXAnchor.constraint(equalTo: centerXAnchor),
-            cardImage.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.5),
+            cardImageContainer.centerXAnchor.constraint(equalTo: centerXAnchor),
+            cardImageContainer.widthAnchor.constraint(equalToConstant: 100),
+            cardImageContainer.heightAnchor.constraint(equalTo: cardImageContainer.widthAnchor),
+            cardImageContainer.topAnchor.constraint(equalTo: topAnchor, constant: -60),
+            
+            cardImage.centerXAnchor.constraint(equalTo: cardImageContainer.centerXAnchor),
+            cardImage.centerYAnchor.constraint(equalTo: cardImageContainer.centerYAnchor),
+            cardImage.widthAnchor.constraint(equalTo: cardImageContainer.widthAnchor, multiplier: 0.4),
             cardImage.heightAnchor.constraint(equalTo: cardImage.widthAnchor),
             
-            cardTitle.topAnchor.constraint(equalTo: cardImage.bottomAnchor, constant: 16),
+            cardTitle.topAnchor.constraint(equalTo: cardImageContainer.bottomAnchor, constant: 16),
             cardTitle.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
             cardTitle.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
             cardTitle.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -16)
@@ -44,7 +62,7 @@ class CardView: UIView {
     }
     
     func configure(withTitle title: String, image: UIImage?) {
-        cardImage.image = image
         cardTitle.text = title
+        cardImage.image = image
     }
 }

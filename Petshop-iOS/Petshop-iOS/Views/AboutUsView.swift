@@ -52,6 +52,6 @@ class AboutUsView: UIView {
                     cardView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0)
                 ])
                 
-                cardView.configure(withTitle: "Sobre Nós!", image: UIImage(named: "bone-icon"))
+                cardView.configure(withTitle: "Sobre Nós !", image: UIImage(named: "bone-icon"))
     }
 }
