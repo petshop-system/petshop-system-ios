@@ -24,4 +24,8 @@ extension UIColor {
         
         self.init(red: red, green: green, blue: blue, alpha: 1.0)
     }
+    
+    static let whiteColor = UIColor(hex: "#FAFAFA")
+    static let blueColor = UIColor(hex: "#42A2D9")
+    static let TitleBlackColor = UIColor(hex: "#39434F")
 }

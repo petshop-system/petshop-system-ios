@@ -23,10 +23,10 @@ class CardView: UIView {
     }
     
     private func setupUI() {
-        backgroundColor = UIColor(hex: "#FAFAFA")
+        backgroundColor = .whiteColor
         layer.cornerRadius = 12
         
-        cardImageContainer.backgroundColor = UIColor(hex: "#FAFAFA")
+        cardImageContainer.backgroundColor = .whiteColor
         cardImageContainer.layer.cornerRadius = 40
         cardImageContainer.layer.masksToBounds = true
         cardImageContainer.translatesAutoresizingMaskIntoConstraints = false
@@ -39,7 +39,7 @@ class CardView: UIView {
         cardImageContainer.addSubview(cardImage)
 
         cardTitle.textAlignment = .center
-        cardTitle.textColor = UIColor(hex: "#39434F")
+        cardTitle.textColor = .TitleBlackColor
         cardTitle.translatesAutoresizingMaskIntoConstraints = false
         addSubview(cardTitle)
         

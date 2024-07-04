@@ -34,7 +34,7 @@ class AboutUsView: UIView {
     }
    
     private func setupUI() {
-        backgroundColor = UIColor(hex: "42A2D9")
+        backgroundColor = .blueColor
         
         addSubview(catDogImageView)
         NSLayoutConstraint.activate([
