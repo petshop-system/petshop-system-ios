@@ -9,9 +9,8 @@ import UIKit
 
 class AboutUsView: UIView {
     
-    let catDogImageView: UIImageView = {
+    private lazy var catDogImageView: UIImageView = {
         let imageView = UIImageView()
-        
         imageView.image = UIImage(named: "catdog")
         imageView.contentMode = .scaleAspectFit
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -24,15 +23,19 @@ class AboutUsView: UIView {
         return cardView
     }()
     
+    private var hasAnimated = false
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
+        animateElements()
+        configureCardView()
     }
     
     required init?(coder: NSCoder) {
-       fatalError("(init(coder:) has not been implemented")
+        fatalError("(init(coder:) has not been implemented")
     }
-   
+    
     private func setupUI() {
         backgroundColor = .blueColor
         
@@ -45,13 +48,36 @@ class AboutUsView: UIView {
         ])
         
         addSubview(cardView)
-                NSLayoutConstraint.activate([
-                    cardView.topAnchor.constraint(equalTo: catDogImageView.bottomAnchor, constant: -80),
-                    cardView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0),
-                    cardView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0),
-                    cardView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0)
-                ])
-                
-                cardView.configure(withTitle: "Sobre Nós !", image: UIImage(named: "bone-icon"))
+        NSLayoutConstraint.activate([
+            cardView.topAnchor.constraint(equalTo: catDogImageView.bottomAnchor, constant: -80),
+            cardView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            cardView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            cardView.bottomAnchor.constraint(equalTo: bottomAnchor)
+        ])
+    }
+    
+    private func configureCardView() {
+        cardView.configure(withTitle:"Sobre nós !", image: UIImage(named: "bone-icon"))
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        guard !hasAnimated else { return }
+        hasAnimated = true
+        
+        DispatchQueue.main.async {
+            self.animateElements()
+        }
+    }
+    
+    public func animateElements() {
+        catDogImageView.transform = CGAffineTransform(translationX: 0, y: -bounds.height)
+        cardView.transform = CGAffineTransform(translationX: 0, y: bounds.height)
+        
+        UIView.animate(withDuration: 1, delay: 0.3, options: .curveEaseOut, animations: {
+            self.catDogImageView.transform = .identity
+            self.cardView.transform = .identity
+        }, completion: nil)
     }
 }

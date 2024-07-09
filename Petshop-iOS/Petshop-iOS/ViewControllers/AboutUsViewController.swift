@@ -8,11 +8,11 @@
 import UIKit
 
 class AboutUsViewController: UIViewController {
+    let aboutUsView = AboutUsView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let aboutUsView = AboutUsView(frame: view.bounds)
         aboutUsView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(aboutUsView)
         
@@ -23,8 +23,15 @@ class AboutUsViewController: UIViewController {
             aboutUsView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
         ])
         
+        aboutUsView.animateElements()
+        
         setupBackButton()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+          super.viewDidAppear(animated)
+            aboutUsView.animateElements()
+      }
     
     private func setupBackButton() {
             let backButton = UIBarButtonItem.backButton(color: .white, target: self, action: #selector(backButtonTapped))
