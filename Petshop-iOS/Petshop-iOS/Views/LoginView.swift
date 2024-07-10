@@ -24,9 +24,7 @@ class LoginView: UIView {
     }
     
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        setupUI()
-        setupConstraints()
+        fatalError("(init(coder:) has not been implemented")
     }
     
     private func setupUI() {

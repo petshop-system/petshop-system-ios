@@ -27,5 +27,6 @@ extension UIColor {
     
     static let whiteColor = UIColor(hex: "#FAFAFA")
     static let blueColor = UIColor(hex: "#42A2D9")
-    static let TitleBlackColor = UIColor(hex: "#39434F")
+    static let BlackColor = UIColor(hex: "#39434F")
+    static let GreyColor = UIColor(hex:"#808B9A")
 }
