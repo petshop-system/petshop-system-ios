@@ -12,7 +12,7 @@ class CardView: UIView {
     private let cardImage = UIImageView()
     private let cardTitle = UILabel()
     private let cardDescription = UILabel()
-    private let forwardButton = UIButton()
+    private let forwardButton = UIButton(type: .roundedRect)
     private let forwardButtonIcon = UIImageView()
     
     private var originalCenter: CGPoint = .zero

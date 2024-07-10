@@ -12,10 +12,10 @@ class LoginView: UIView {
     let usernameTextField = UITextField()
     let passwordTextField = UITextField()
     let loginButton = UIButton(type: .system)
-    let forgotPasswordLabel = UILabel()
+    let forgotPasswordLabel = UIButton(type: .system)
     let companyLabel = UILabel()
     let newUserLabel = UILabel()
-    let newUserButton = UIButton()
+    let newUserButton = UIButton(type: .system)
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -68,8 +68,8 @@ class LoginView: UIView {
         loginButton.backgroundColor = .blueColor
         loginButton.titleLabel?.font = UIFont.systemFont(ofSize: 20)
         
-        forgotPasswordLabel.text = "Esqueceu a senha?"
-        forgotPasswordLabel.textColor = .blueColor
+        forgotPasswordLabel.setTitle("Esqueceu a senha?", for: .normal)
+        forgotPasswordLabel.setTitleColor(.blueColor, for: .normal)
         forgotPasswordLabel.translatesAutoresizingMaskIntoConstraints = false
         
         newUserLabel.text = "Ainda não tem uma conta?"
@@ -77,6 +77,7 @@ class LoginView: UIView {
         newUserLabel.translatesAutoresizingMaskIntoConstraints = false
         
         newUserButton.setTitle("Clique aqui", for: .normal)
+        newUserButton.titleLabel?.font = UIFont.systemFont(ofSize: 16)
         newUserButton.setTitleColor(.blueColor, for: .normal)
         newUserButton.translatesAutoresizingMaskIntoConstraints = false
         
