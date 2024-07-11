@@ -106,10 +106,10 @@ class CardView: UIView {
                 cardImageContainer.centerXAnchor.constraint(equalTo: centerXAnchor),
                 cardImageContainer.widthAnchor.constraint(equalToConstant: 80),
                 cardImageContainer.heightAnchor.constraint(equalTo: cardImageContainer.widthAnchor),
-                cardImageContainer.topAnchor.constraint(equalTo: topAnchor, constant: -60),
+                cardImageContainer.topAnchor.constraint(equalTo: topAnchor, constant: -45),
                 
                 cardImage.centerXAnchor.constraint(equalTo: cardImageContainer.centerXAnchor),
-                cardImage.centerYAnchor.constraint(equalTo: cardImageContainer.centerYAnchor),
+                cardImage.centerYAnchor.constraint(equalTo: cardImageContainer.centerYAnchor, constant: 1),
                 cardImage.widthAnchor.constraint(equalTo: cardImageContainer.widthAnchor, multiplier: 0.4),
                 cardImage.heightAnchor.constraint(equalTo: cardImage.widthAnchor),
                 
