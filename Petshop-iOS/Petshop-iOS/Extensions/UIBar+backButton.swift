@@ -11,10 +11,10 @@ extension UIBarButtonItem {
     
     static func backButton(color: UIColor = .white, target: Any?, action: Selector?) -> UIBarButtonItem {
         
-            let backButtonImage = UIImage(named: "back-arrow-light") ?? UIImage(named: "back-arrow-dark")
-            let backButton = UIBarButtonItem(image: backButtonImage, style: .plain, target: target, action: action)
-            backButton.tintColor = color
+        let backButtonImage = UIImage(resource: .backArrowLight)
+        let backButton = UIBarButtonItem(image: backButtonImage, style: .plain, target: target, action: action)
+        backButton.tintColor = color
         
-            return backButton
+        return backButton
     }
 }

@@ -64,10 +64,10 @@ class CardView: UIView {
     }
         
         private func setupUI() {
-            backgroundColor = .whiteColor
+            backgroundColor = .primaryBackgroundColor
             layer.cornerRadius = 12
             
-            cardImageContainer.backgroundColor = .whiteColor
+            cardImageContainer.backgroundColor = .primaryBackgroundColor
             cardImageContainer.layer.cornerRadius = 40
             cardImageContainer.layer.masksToBounds = true
             cardImageContainer.translatesAutoresizingMaskIntoConstraints = false
@@ -81,23 +81,23 @@ class CardView: UIView {
             
             cardTitle.textAlignment = .center
             cardTitle.font = UIFont.boldSystemFont(ofSize: 24)
-            cardTitle.textColor = .BlackColor
+            cardTitle.textColor = .titleColor
             cardTitle.translatesAutoresizingMaskIntoConstraints = false
             addSubview(cardTitle)
             
             cardDescription.textAlignment = .center
             cardDescription.font = UIFont.systemFont(ofSize: 16)
-            cardDescription.textColor = .GreyColor
+            cardDescription.textColor = .textColor
             cardDescription.numberOfLines = 0
             cardDescription.translatesAutoresizingMaskIntoConstraints = false
             addSubview(cardDescription)
             
             forwardButton.setTitle("", for: .normal)
-            forwardButton.setTitleColor(.whiteColor, for: .normal)
+            forwardButton.setTitleColor(.primaryBackgroundColor, for: .normal)
             forwardButton.translatesAutoresizingMaskIntoConstraints = false
             addSubview(forwardButton)
             
-            forwardButtonIcon.image = UIImage(named: "arrow-icon")
+            forwardButtonIcon.image = .arrowIcon
             forwardButtonIcon.contentMode = .scaleAspectFit
             forwardButtonIcon.translatesAutoresizingMaskIntoConstraints = false
             addSubview(forwardButtonIcon)

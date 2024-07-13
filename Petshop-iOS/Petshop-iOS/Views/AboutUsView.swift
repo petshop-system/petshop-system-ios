@@ -9,9 +9,9 @@ import UIKit
 
 class AboutUsView: UIView {
     
-    private lazy var catDogImageView: UIImageView = {
+    private lazy var aboutViewBackground: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "catdog")
+        imageView.image = .catdog
         imageView.contentMode = .scaleAspectFit
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
@@ -37,23 +37,23 @@ class AboutUsView: UIView {
     }
     
     private func setupUI() {
-        backgroundColor = .blueColor
+        backgroundColor = .secondaryBackgroundColor
         
-        catDogImageView.contentMode = .scaleAspectFill
-        catDogImageView.clipsToBounds = true
-        catDogImageView.translatesAutoresizingMaskIntoConstraints = false
+        aboutViewBackground.contentMode = .scaleAspectFill
+        aboutViewBackground.clipsToBounds = true
+        aboutViewBackground.translatesAutoresizingMaskIntoConstraints = false
         
-        addSubview(catDogImageView)
+        addSubview(aboutViewBackground)
         NSLayoutConstraint.activate([
-            catDogImageView.centerXAnchor.constraint(equalTo: centerXAnchor, constant: 30),
-            catDogImageView.centerYAnchor.constraint(equalTo: centerYAnchor, constant: -100),
-            catDogImageView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 1.2),
-            catDogImageView.heightAnchor.constraint(equalTo: catDogImageView.widthAnchor)
+            aboutViewBackground.centerXAnchor.constraint(equalTo: centerXAnchor, constant: 30),
+            aboutViewBackground.centerYAnchor.constraint(equalTo: centerYAnchor, constant: -100),
+            aboutViewBackground.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 1.2),
+            aboutViewBackground.heightAnchor.constraint(equalTo: aboutViewBackground.widthAnchor)
         ])
         
         addSubview(cardView)
         NSLayoutConstraint.activate([
-            cardView.topAnchor.constraint(equalTo: catDogImageView.bottomAnchor, constant: -80),
+            cardView.topAnchor.constraint(equalTo: aboutViewBackground.bottomAnchor, constant: -80),
             cardView.leadingAnchor.constraint(equalTo: leadingAnchor),
             cardView.trailingAnchor.constraint(equalTo: trailingAnchor),
             cardView.bottomAnchor.constraint(equalTo: bottomAnchor),
@@ -63,7 +63,7 @@ class AboutUsView: UIView {
     private func configureCardView() {
         let button = UIButton(type: .system)
         button.setTitle("Próximo", for: .normal)
-        button.backgroundColor = .blueColor
+        button.backgroundColor = .secondaryBackgroundColor
         button.setTitleColor(.white, for: .normal)
         button.layer.cornerRadius = 14
 //        button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
@@ -89,7 +89,7 @@ class AboutUsView: UIView {
         cardView.configure(
             withTitle: "Sobre nós !",
             description: attributedDescription,
-            image: UIImage(named: "bone-icon"),
+            image: .boneIcon,
             button: button
         )
     }
@@ -113,7 +113,7 @@ class AboutUsView: UIView {
         cardView.transform = CGAffineTransform(translationX: 0, y: bounds.height)
         
         UIView.animate(withDuration: 1, delay: 0.2, options: .curveEaseOut, animations: {
-            self.catDogImageView.transform = .identity
+            self.aboutViewBackground.transform = .identity
             self.cardView.transform = .identity
         }, completion: nil)
     }
