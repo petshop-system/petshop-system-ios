@@ -25,8 +25,15 @@ extension UIColor {
         self.init(red: red, green: green, blue: blue, alpha: 1.0)
     }
     
+    // backgrounds
     static let primaryBackgroundColor = UIColor(hex: "#FAFAFA")
     static let secondaryBackgroundColor = UIColor(hex: "#42A2D9")
-    static let titleColor = UIColor(hex: "#39434F")
-    static let textColor = UIColor(hex:"#808B9A")
+    
+    //texts
+    static let primaryTextColor = UIColor(hex: "#39434F")
+    static let secondaryTextColor = UIColor(hex:"#808B9A")
+    
+    //buttons
+    static let primaryButtonColor = UIColor(hex: "#42A2D9")
+    static let disabledButtonColor = UIColor(hex: "#999999")
 }

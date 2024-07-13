@@ -65,12 +65,12 @@ class LoginView: UIView {
         loginButton.translatesAutoresizingMaskIntoConstraints = false
         loginButton.setTitleColor(.white, for: .normal)
         loginButton.layer.cornerRadius = 15
-        loginButton.backgroundColor = .secondaryBackgroundColor
+        loginButton.backgroundColor = .primaryButtonColor
         loginButton.titleLabel?.font = UIFont.systemFont(ofSize: 20)
         
         forgotPasswordLabel.setTitle("Esqueceu a senha?", for: .normal)
         forgotPasswordLabel.titleLabel?.font = UIFont.systemFont(ofSize: 16)
-        forgotPasswordLabel.setTitleColor(.secondaryBackgroundColor, for: .normal)
+        forgotPasswordLabel.setTitleColor(.primaryButtonColor, for: .normal)
         forgotPasswordLabel.translatesAutoresizingMaskIntoConstraints = false
         
         newUserLabel.text = "Ainda não tem uma conta?"
@@ -80,7 +80,7 @@ class LoginView: UIView {
         
         newUserButton.setTitle("Clique aqui", for: .normal)
         newUserButton.titleLabel?.font = UIFont.systemFont(ofSize: 17)
-        newUserButton.setTitleColor(.secondaryBackgroundColor, for: .normal)
+        newUserButton.setTitleColor(.primaryButtonColor, for: .normal)
         newUserButton.translatesAutoresizingMaskIntoConstraints = false
         
         addSubview(logo)

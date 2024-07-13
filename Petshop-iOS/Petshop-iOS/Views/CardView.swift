@@ -81,19 +81,19 @@ class CardView: UIView {
             
             cardTitle.textAlignment = .center
             cardTitle.font = UIFont.boldSystemFont(ofSize: 24)
-            cardTitle.textColor = .titleColor
+            cardTitle.textColor = .primaryTextColor
             cardTitle.translatesAutoresizingMaskIntoConstraints = false
             addSubview(cardTitle)
             
             cardDescription.textAlignment = .center
             cardDescription.font = UIFont.systemFont(ofSize: 16)
-            cardDescription.textColor = .textColor
+            cardDescription.textColor = .secondaryTextColor
             cardDescription.numberOfLines = 0
             cardDescription.translatesAutoresizingMaskIntoConstraints = false
             addSubview(cardDescription)
             
             forwardButton.setTitle("", for: .normal)
-            forwardButton.setTitleColor(.primaryBackgroundColor, for: .normal)
+            forwardButton.setTitleColor(.primaryButtonColor, for: .normal)
             forwardButton.translatesAutoresizingMaskIntoConstraints = false
             addSubview(forwardButton)
             
