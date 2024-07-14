@@ -12,10 +12,10 @@ class LoginView: UIView {
     let usernameTextField = UITextField()
     let passwordTextField = UITextField()
     let loginButton = UIButton(type: .system)
-    let forgotPasswordLabel = UILabel()
+    let forgotPasswordLabel = UIButton(type: .system)
     let companyLabel = UILabel()
     let newUserLabel = UILabel()
-    let newUserButton = UIButton()
+    let newUserButton = UIButton(type: .system)
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -24,13 +24,11 @@ class LoginView: UIView {
     }
     
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        setupUI()
-        setupConstraints()
+        fatalError("(init(coder:) has not been implemented")
     }
     
     private func setupUI() {
-        logo.image = UIImage(named: "logo-transparent")
+        logo.image = .logoTransparent
         logo.translatesAutoresizingMaskIntoConstraints = false
         logo.contentMode = .scaleAspectFit
         
@@ -40,7 +38,7 @@ class LoginView: UIView {
         usernameTextField.layer.borderWidth = 1.0
         usernameTextField.layer.borderColor = UIColor.lightGray.cgColor
         usernameTextField.translatesAutoresizingMaskIntoConstraints = false
-        let emailIcon = UIImageView(image: UIImage(named: "user-icon"))
+        let emailIcon = UIImageView(image: .userIcon)
         emailIcon.contentMode = .center
         let rightPaddingView = UIView(frame: CGRect(x: 0, y: 0, width: 40, height: emailIcon.bounds.height))
         rightPaddingView.addSubview(emailIcon)
@@ -55,7 +53,7 @@ class LoginView: UIView {
         passwordTextField.layer.borderWidth = 1.0
         passwordTextField.layer.borderColor = UIColor.lightGray.cgColor
         passwordTextField.translatesAutoresizingMaskIntoConstraints = false
-        let passwordIcon = UIImageView(image: UIImage(named: "eye-icon"))
+        let passwordIcon = UIImageView(image: .eyeIcon)
         passwordIcon.contentMode = .center
         let passwordRightPaddingView = UIView(frame: CGRect(x: 0, y: 0, width: 40, height: passwordIcon.bounds.height))
         passwordRightPaddingView.addSubview(passwordIcon)
@@ -67,19 +65,22 @@ class LoginView: UIView {
         loginButton.translatesAutoresizingMaskIntoConstraints = false
         loginButton.setTitleColor(.white, for: .normal)
         loginButton.layer.cornerRadius = 15
-        loginButton.backgroundColor = UIColor(hex: "#42A2D9")
+        loginButton.backgroundColor = .primaryButtonColor
         loginButton.titleLabel?.font = UIFont.systemFont(ofSize: 20)
         
-        forgotPasswordLabel.text = "Esqueceu a senha?"
-        forgotPasswordLabel.textColor = .systemBlue
+        forgotPasswordLabel.setTitle("Esqueceu a senha?", for: .normal)
+        forgotPasswordLabel.titleLabel?.font = UIFont.systemFont(ofSize: 16)
+        forgotPasswordLabel.setTitleColor(.primaryButtonColor, for: .normal)
         forgotPasswordLabel.translatesAutoresizingMaskIntoConstraints = false
         
         newUserLabel.text = "Ainda não tem uma conta?"
+        newUserLabel.font = UIFont.systemFont(ofSize: 17)
         newUserLabel.textColor = .black
         newUserLabel.translatesAutoresizingMaskIntoConstraints = false
         
         newUserButton.setTitle("Clique aqui", for: .normal)
-        newUserButton.setTitleColor(.systemBlue, for: .normal)
+        newUserButton.titleLabel?.font = UIFont.systemFont(ofSize: 17)
+        newUserButton.setTitleColor(.primaryButtonColor, for: .normal)
         newUserButton.translatesAutoresizingMaskIntoConstraints = false
         
         addSubview(logo)
@@ -114,7 +115,7 @@ class LoginView: UIView {
             loginButton.heightAnchor.constraint(equalTo: usernameTextField.heightAnchor),
             
             forgotPasswordLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            forgotPasswordLabel.topAnchor.constraint(equalTo: passwordTextField.topAnchor, constant: 115),
+            forgotPasswordLabel.topAnchor.constraint(equalTo: passwordTextField.topAnchor, constant: 110),
             
             newUserLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 50),
             newUserLabel.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 280),

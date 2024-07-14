@@ -13,7 +13,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor(hex: "#FAFAFA")
+        view.backgroundColor = .primaryBackgroundColor
         
         view.addSubview(loginView)
         loginView.translatesAutoresizingMaskIntoConstraints = false
@@ -38,7 +38,8 @@ class LoginViewController: UIViewController {
     }
     
     @objc func createAccount() {
-        print("aqui o user vai criar uma conta")
+        let aboutUsVC = AboutUsViewController()
+        navigationController?.pushViewController(aboutUsVC, animated: true)
     }
     
     @objc func forgotPasswordTapped() {

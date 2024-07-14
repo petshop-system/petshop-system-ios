@@ -18,8 +18,10 @@ Recursos Principais:
 
 Tela de login:
 
-<img width="442" alt="petshop-login-view" src="https://github.com/petshop-system/petshop-system-ios/assets/75784609/8af89e91-da05-4e26-af9d-8377ea7938ec">
 
-<img width="495" alt="petshop-login" src="https://github.com/petshop-system/petshop-system-ios/assets/75784609/db9b3d67-2101-4c59-9c83-b5d85494fa60">
+https://github.com/user-attachments/assets/48846fe6-9d9f-430f-84b4-59d39843cb31
 
+
+
+<img src="https://github.com/user-attachments/assets/fe8a6522-3a9f-4646-a77a-9aec438af53e" width="300">
 
