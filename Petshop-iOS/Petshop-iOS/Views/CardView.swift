@@ -8,6 +8,8 @@
 import UIKit
 
 class CardView: UIView {
+    private var buttonAction: (() -> Void)?
+    
     private let cardImageContainer = UIView()
     private let cardImage = UIImageView()
     private let cardTitle = UILabel()
@@ -23,16 +25,19 @@ class CardView: UIView {
         super.init(frame: frame)
         setupUI()
         setupPanGesture()
+        forwardButton.addTarget(self, action: #selector(forwardButtonTapped), for: .touchUpInside)
     }
     
     required init?(coder: NSCoder) {
         fatalError("(init(coder:) has not been implemented")
     }
     
-    func configure(withTitle title: String, description: NSAttributedString, image: UIImage?, button: UIButton?) {
+    func configure(withTitle title: String, description: NSAttributedString, image: UIImage?, button: UIButton?, buttonAction: @escaping () -> Void) {
         cardImage.image = image
         cardTitle.text = title
         cardDescription.attributedText = description
+        self.buttonAction = buttonAction
+        forwardAction = buttonAction
         
         if let button = button {
             forwardButton.setTitle(button.title(for: .normal), for: .normal)

@@ -8,13 +8,19 @@
 import UIKit
 
 class AboutUsViewController: UIViewController {
-    let aboutUsView = AboutUsView()
-
+    private let aboutUsView = AboutUsView()
+    private let viewModel = AboutUsViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addSubview(aboutUsView)
+        
+        aboutUsView.viewModel = viewModel
+        viewModel.navigateToUserRegister = { [weak self] in
+            self?.navigateToUserRegister()
+        }
         
         aboutUsView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(aboutUsView)
         
         NSLayoutConstraint.activate([
             aboutUsView.topAnchor.constraint(equalTo: view.topAnchor),
@@ -29,17 +35,22 @@ class AboutUsViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-          super.viewDidAppear(animated)
-            aboutUsView.animateElements()
-      }
+        super.viewDidAppear(animated)
+        aboutUsView.animateElements()
+    }
     
     private func setupBackButton() {
-            let backButton = UIBarButtonItem.backButton(color: .white, target: self, action: #selector(backButtonTapped))
-            
-            self.navigationItem.leftBarButtonItem = backButton
-        }
-        
-        @objc private func backButtonTapped() {
-            self.navigationController?.popViewController(animated: true)
-        }
+        let backButton = UIBarButtonItem.backButton(color: .white, target: self, action: #selector(backButtonTapped))
+        self.navigationItem.leftBarButtonItem = backButton
+    }
+    
+    @objc private func backButtonTapped() {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    private func navigateToUserRegister() {
+        let userRegisterVC = userRegisterViewController()
+        navigationController?.pushViewController(userRegisterVC, animated: true)
+        print("navegando para view de registro")
+    }
 }

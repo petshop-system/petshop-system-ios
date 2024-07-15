@@ -13,6 +13,6 @@ class userRegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .primaryBackgroundColor
+        view.backgroundColor = .blue
     }
 }

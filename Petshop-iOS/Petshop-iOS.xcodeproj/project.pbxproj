@@ -20,6 +20,8 @@
 		C5CB614C2C449A490089FEC8 /* UserRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CB614B2C449A400089FEC8 /* UserRegisterView.swift */; };
 		C5CB614E2C44A0160089FEC8 /* UIButton+ForwardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CB614D2C449FE50089FEC8 /* UIButton+ForwardButton.swift */; };
 		C5CB61502C44B7400089FEC8 /* userRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CB614F2C44B7400089FEC8 /* userRegisterViewController.swift */; };
+		C5CB61532C44D3CF0089FEC8 /* AboutUsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CB61522C44D3CE0089FEC8 /* AboutUsViewModel.swift */; };
+		C5CB61552C44E8C20089FEC8 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CB61542C44E8BE0089FEC8 /* LoginViewModel.swift */; };
 		C5F49DA02C32270A00B01A07 /* UIBar+backButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F49D9F2C32270A00B01A07 /* UIBar+backButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 		C5CB614B2C449A400089FEC8 /* UserRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegisterView.swift; sourceTree = "<group>"; };
 		C5CB614D2C449FE50089FEC8 /* UIButton+ForwardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+ForwardButton.swift"; sourceTree = "<group>"; };
 		C5CB614F2C44B7400089FEC8 /* userRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userRegisterViewController.swift; sourceTree = "<group>"; };
+		C5CB61522C44D3CE0089FEC8 /* AboutUsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewModel.swift; sourceTree = "<group>"; };
+		C5CB61542C44E8BE0089FEC8 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		C5F49D9F2C32270A00B01A07 /* UIBar+backButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBar+backButton.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +105,7 @@
 		C5550E872B784D4700A84CF9 /* Petshop-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				C5CB61512C44D3C00089FEC8 /* ViewModels */,
 				C5B21F112B78661000C257B1 /* Views */,
 				C52427352C2775930070C9C9 /* ViewControllers */,
 				C501F9F02C10ED9A00AF0A47 /* Extensions */,
@@ -121,6 +126,15 @@
 				C53BC9952C31F03E005462E1 /* CardView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		C5CB61512C44D3C00089FEC8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C5CB61542C44E8BE0089FEC8 /* LoginViewModel.swift */,
+				C5CB61522C44D3CE0089FEC8 /* AboutUsViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,7 +216,9 @@
 				C5550E892B784D4700A84CF9 /* AppDelegate.swift in Sources */,
 				C5178CFD2C073F8A00C6038F /* SceneDelegate.swift in Sources */,
 				C52427332C276FFE0070C9C9 /* LoginView.swift in Sources */,
+				C5CB61532C44D3CF0089FEC8 /* AboutUsViewModel.swift in Sources */,
 				C5CB614E2C44A0160089FEC8 /* UIButton+ForwardButton.swift in Sources */,
+				C5CB61552C44E8C20089FEC8 /* LoginViewModel.swift in Sources */,
 				C53BC9942C31D064005462E1 /* AboutUsViewController.swift in Sources */,
 				C53BC9922C31CE59005462E1 /* AboutUsView.swift in Sources */,
 				C5CB614C2C449A490089FEC8 /* UserRegisterView.swift in Sources */,

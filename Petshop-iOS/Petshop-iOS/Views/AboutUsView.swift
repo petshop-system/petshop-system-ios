@@ -25,6 +25,12 @@ class AboutUsView: UIView {
 
     private var hasAnimated = false
     
+    var viewModel: AboutUsViewModel? {
+        didSet {
+            configureCardView()
+        }
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
@@ -86,22 +92,17 @@ class AboutUsView: UIView {
             withTitle: "Sobre nós !",
             description: attributedDescription,
             image: .boneIcon,
-            button: button
+            button: button,
+            buttonAction: { [weak self] in
+                self?.viewModel?.forwardButtonTapped()
+            }
         )
-        
-        cardView.forwardAction = { [weak self] in
-            self?.forwardButtonTapped()
-        }
-    }
-
-    @objc private func forwardButtonTapped() {
-        let userRegisterVC = userRegisterViewController()
-        
-        if let navigationController = self.window?.rootViewController as? UINavigationController {
-            navigationController.pushViewController(userRegisterVC, animated: true)
-        }
     }
     
+    @objc private func forwardButtonTapped() {
+        viewModel?.forwardButtonTapped() 
+    }
+
     override func layoutSubviews() {
         super.layoutSubviews()
         
