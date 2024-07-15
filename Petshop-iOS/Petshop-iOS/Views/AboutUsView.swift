@@ -62,7 +62,7 @@ class AboutUsView: UIView {
     
     private func configureCardView() {
         let button = UIButton.forwardButton()
-        button.addTarget(self, action: #selector(forwardButton), for: .touchUpInside)
+        button.addTarget(self, action: #selector(forwardButtonTapped), for: .touchUpInside)
         
         let attributedDescription = NSMutableAttributedString(string: """
         O Petshop-System é a plataforma que conecta você à uma rede de diferentes serviços e produtos para o seu PET.
@@ -88,9 +88,13 @@ class AboutUsView: UIView {
             image: .boneIcon,
             button: button
         )
+        
+        cardView.forwardAction = { [weak self] in
+            self?.forwardButtonTapped()
+        }
     }
 
-    @objc private func forwardButton() {
+    @objc private func forwardButtonTapped() {
         let userRegisterVC = userRegisterViewController()
         
         if let navigationController = self.window?.rootViewController as? UINavigationController {

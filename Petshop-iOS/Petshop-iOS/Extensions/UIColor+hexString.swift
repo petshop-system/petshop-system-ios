@@ -31,8 +31,8 @@ extension UIColor {
     
     // texts
     static let primaryTextColor = UIColor(hex: "#FFFFFF") // branco
-    static let secondaryTextColor = UIColor(hex:"#808B9A")
-    static let thirdTextColor = UIColor(hex: "#39434F")
+    static let secondaryTextColor = UIColor(hex:"#808B9A") // cinza
+    static let thirdTextColor = UIColor(hex: "#39434F") // preto
     
     // buttons
     static let primaryButtonColor = UIColor(hex: "#42A2D9") // azul

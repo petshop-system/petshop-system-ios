@@ -17,6 +17,8 @@ class CardView: UIView {
     private var originalCenter: CGPoint = .zero
     private var isDraggingCard: Bool = false
     
+    var forwardAction: (() -> Void)?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
@@ -58,7 +60,7 @@ class CardView: UIView {
         
         cardTitle.textAlignment = .center
         cardTitle.font = UIFont.boldSystemFont(ofSize: 24)
-        cardTitle.textColor = .primaryTextColor
+        cardTitle.textColor = .thirdTextColor
         cardTitle.translatesAutoresizingMaskIntoConstraints = false
         addSubview(cardTitle)
         
@@ -136,4 +138,8 @@ class CardView: UIView {
                 break
             }
         }
+    
+    @objc private func forwardButtonTapped() {
+        forwardAction?()
     }
+}
