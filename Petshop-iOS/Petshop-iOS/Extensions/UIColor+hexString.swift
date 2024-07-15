@@ -26,14 +26,15 @@ extension UIColor {
     }
     
     // backgrounds
-    static let primaryBackgroundColor = UIColor(hex: "#FAFAFA")
-    static let secondaryBackgroundColor = UIColor(hex: "#42A2D9")
+    static let primaryBackgroundColor = UIColor(hex: "#FAFAFA") // branco
+    static let secondaryBackgroundColor = UIColor(hex: "#42A2D9") // azul
     
-    //texts
-    static let primaryTextColor = UIColor(hex: "#39434F")
+    // texts
+    static let primaryTextColor = UIColor(hex: "#FFFFFF") // branco
     static let secondaryTextColor = UIColor(hex:"#808B9A")
+    static let thirdTextColor = UIColor(hex: "#39434F")
     
-    //buttons
-    static let primaryButtonColor = UIColor(hex: "#42A2D9")
+    // buttons
+    static let primaryButtonColor = UIColor(hex: "#42A2D9") // azul
     static let disabledButtonColor = UIColor(hex: "#999999")
 }

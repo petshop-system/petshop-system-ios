@@ -8,14 +8,34 @@
 import UIKit
 
 class LoginView: UIView {
-    let logo = UIImageView()
-    let usernameTextField = UITextField()
-    let passwordTextField = UITextField()
-    let loginButton = UIButton(type: .system)
-    let forgotPasswordLabel = UIButton(type: .system)
-    let companyLabel = UILabel()
-    let newUserLabel = UILabel()
-    let newUserButton = UIButton(type: .system)
+    private let logo = UIImageView()
+    private let usernameTextField = UITextField()
+    private let passwordTextField = UITextField()
+    private let companyLabel = UILabel()
+    
+    internal let loginButton = UIButton(type: .system)
+    internal let forgotPasswordLabel = UIButton(type: .system)
+    internal let newUserButton = UIButton(type: .system)
+    private let newUserLabel = UILabel()
+    
+    func configureLoginButton(title: String, target: Any?, action: Selector, for event: UIControl.Event) {
+        loginButton.setTitle(title, for: .normal)
+        loginButton.addTarget(target, action: action, for: event)
+    }
+    
+    func configureForgotPasswordLabel(text: String, target: Any?, action: Selector) {
+        forgotPasswordLabel.setTitle(text, for: .normal)
+        forgotPasswordLabel.addTarget(target, action: action, for: .touchUpInside)
+    }
+    
+    func configureNewUserLabel(text: String) {
+        newUserLabel.text = text
+    }
+    
+    func configureNewUserButton(title: String, target: Any?, action: Selector, for event: UIControl.Event) {
+        newUserButton.setTitle(title, for: .normal)
+        newUserButton.addTarget(target, action: action, for: event)
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)

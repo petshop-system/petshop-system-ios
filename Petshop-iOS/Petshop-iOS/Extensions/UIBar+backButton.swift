@@ -8,7 +8,6 @@
 import UIKit
 
 extension UIBarButtonItem {
-    
     static func backButton(color: UIColor = .white, target: Any?, action: Selector?) -> UIBarButtonItem {
         
         let backButtonImage = UIImage(resource: .backArrowLight)

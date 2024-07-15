@@ -61,12 +61,8 @@ class AboutUsView: UIView {
     }
     
     private func configureCardView() {
-        let button = UIButton(type: .system)
-        button.setTitle("Próximo", for: .normal)
-        button.backgroundColor = .secondaryBackgroundColor
-        button.setTitleColor(.white, for: .normal)
-        button.layer.cornerRadius = 14
-//        button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        let button = UIButton.forwardButton()
+        button.addTarget(self, action: #selector(forwardButton), for: .touchUpInside)
         
         let attributedDescription = NSMutableAttributedString(string: """
         O Petshop-System é a plataforma que conecta você à uma rede de diferentes serviços e produtos para o seu PET.
@@ -93,11 +89,15 @@ class AboutUsView: UIView {
             button: button
         )
     }
-    
-//    @objc private func buttonTapped() {
-//        print("Button tapped!")
-//    }
 
+    @objc private func forwardButton() {
+        let userRegisterVC = userRegisterViewController()
+        
+        if let navigationController = self.window?.rootViewController as? UINavigationController {
+            navigationController.pushViewController(userRegisterVC, animated: true)
+        }
+    }
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         

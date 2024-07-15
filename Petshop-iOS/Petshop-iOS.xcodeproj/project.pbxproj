@@ -17,6 +17,9 @@
 		C5550E892B784D4700A84CF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5550E882B784D4700A84CF9 /* AppDelegate.swift */; };
 		C5550E922B784D4A00A84CF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5550E912B784D4A00A84CF9 /* Assets.xcassets */; };
 		C5B21F162B7867CF00C257B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B21F152B7867CF00C257B1 /* LaunchScreen.storyboard */; };
+		C5CB614C2C449A490089FEC8 /* UserRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CB614B2C449A400089FEC8 /* UserRegisterView.swift */; };
+		C5CB614E2C44A0160089FEC8 /* UIButton+ForwardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CB614D2C449FE50089FEC8 /* UIButton+ForwardButton.swift */; };
+		C5CB61502C44B7400089FEC8 /* userRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CB614F2C44B7400089FEC8 /* userRegisterViewController.swift */; };
 		C5F49DA02C32270A00B01A07 /* UIBar+backButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F49D9F2C32270A00B01A07 /* UIBar+backButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +36,9 @@
 		C5550E912B784D4A00A84CF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5550E962B784D4A00A84CF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5B21F152B7867CF00C257B1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C5CB614B2C449A400089FEC8 /* UserRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegisterView.swift; sourceTree = "<group>"; };
+		C5CB614D2C449FE50089FEC8 /* UIButton+ForwardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+ForwardButton.swift"; sourceTree = "<group>"; };
+		C5CB614F2C44B7400089FEC8 /* userRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userRegisterViewController.swift; sourceTree = "<group>"; };
 		C5F49D9F2C32270A00B01A07 /* UIBar+backButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBar+backButton.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,6 +56,7 @@
 		C501F9F02C10ED9A00AF0A47 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C5CB614D2C449FE50089FEC8 /* UIButton+ForwardButton.swift */,
 				C501F9F12C10EDAB00AF0A47 /* UIColor+hexString.swift */,
 				C5F49D9F2C32270A00B01A07 /* UIBar+backButton.swift */,
 			);
@@ -70,6 +77,7 @@
 			children = (
 				C5178CF72C0739F400C6038F /* LoginViewController.swift */,
 				C53BC9932C31D064005462E1 /* AboutUsViewController.swift */,
+				C5CB614F2C44B7400089FEC8 /* userRegisterViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -107,6 +115,7 @@
 		C5B21F112B78661000C257B1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C5CB614B2C449A400089FEC8 /* UserRegisterView.swift */,
 				C52427322C276FFE0070C9C9 /* LoginView.swift */,
 				C53BC9912C31CE59005462E1 /* AboutUsView.swift */,
 				C53BC9952C31F03E005462E1 /* CardView.swift */,
@@ -193,8 +202,11 @@
 				C5550E892B784D4700A84CF9 /* AppDelegate.swift in Sources */,
 				C5178CFD2C073F8A00C6038F /* SceneDelegate.swift in Sources */,
 				C52427332C276FFE0070C9C9 /* LoginView.swift in Sources */,
+				C5CB614E2C44A0160089FEC8 /* UIButton+ForwardButton.swift in Sources */,
 				C53BC9942C31D064005462E1 /* AboutUsViewController.swift in Sources */,
 				C53BC9922C31CE59005462E1 /* AboutUsView.swift in Sources */,
+				C5CB614C2C449A490089FEC8 /* UserRegisterView.swift in Sources */,
+				C5CB61502C44B7400089FEC8 /* userRegisterViewController.swift in Sources */,
 				C53BC9962C31F03E005462E1 /* CardView.swift in Sources */,
 				C5F49DA02C32270A00B01A07 /* UIBar+backButton.swift in Sources */,
 				C501F9F22C10EDAB00AF0A47 /* UIColor+hexString.swift in Sources */,
