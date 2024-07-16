@@ -34,8 +34,9 @@ class AboutUsView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
-        animateElements()
+        setupConstraints()
         configureCardView()
+        animateElements()
     }
     
     required init?(coder: NSCoder) {
@@ -50,6 +51,10 @@ class AboutUsView: UIView {
         aboutViewBackground.translatesAutoresizingMaskIntoConstraints = false
         
         addSubview(aboutViewBackground)
+        addSubview(cardView)
+    }
+    
+    private func setupConstraints() {
         NSLayoutConstraint.activate([
             aboutViewBackground.centerXAnchor.constraint(equalTo: centerXAnchor, constant: 30),
             aboutViewBackground.centerYAnchor.constraint(equalTo: centerYAnchor, constant: -100),
@@ -57,7 +62,6 @@ class AboutUsView: UIView {
             aboutViewBackground.heightAnchor.constraint(equalTo: aboutViewBackground.widthAnchor)
         ])
         
-        addSubview(cardView)
         NSLayoutConstraint.activate([
             cardView.topAnchor.constraint(equalTo: aboutViewBackground.bottomAnchor, constant: -80),
             cardView.leadingAnchor.constraint(equalTo: leadingAnchor),

@@ -39,7 +39,6 @@ class LoginView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = .primaryBackgroundColor
         setupUI()
         setupConstraints()
     }
@@ -49,6 +48,7 @@ class LoginView: UIView {
     }
     
     private func setupUI() {
+        backgroundColor = .primaryBackgroundColor
         logo.image = .logoTransparent
         logo.translatesAutoresizingMaskIntoConstraints = false
         logo.contentMode = .scaleAspectFit

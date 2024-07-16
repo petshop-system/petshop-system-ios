@@ -14,5 +14,16 @@ class userRegisterViewController: UIViewController {
         super.viewDidLoad()
         
         view.addSubview(userRegister)
+        
+        setupBackButton()
+    }
+    
+    private func setupBackButton() {
+        let backButton = UIBarButtonItem.backButton(color: .white, target: self, action: #selector(backButtonTapped))
+        self.navigationItem.leftBarButtonItem = backButton
+    }
+    
+    @objc private func backButtonTapped() {
+        self.navigationController?.popViewController(animated: true)
     }
 }
