@@ -22,6 +22,6 @@ class UserRegisterView: UIView {
     }
     
     private func setupUI() {
-        backgroundColor = .green
+        backgroundColor = .primaryBackgroundColor
     }
 }

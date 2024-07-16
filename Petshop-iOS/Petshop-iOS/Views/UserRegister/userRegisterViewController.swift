@@ -27,7 +27,7 @@ class userRegisterViewController: UIViewController {
     }
     
     private func setupBackButton() {
-        let backButton = UIBarButtonItem.backButton(color: .white, target: self, action: #selector(backButtonTapped))
+        let backButton = UIBarButtonItem.backButton(color: .secondaryTextColor, target: self, action: #selector(backButtonTapped))
         self.navigationItem.leftBarButtonItem = backButton
     }
     
