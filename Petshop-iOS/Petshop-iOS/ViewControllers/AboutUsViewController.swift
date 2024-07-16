@@ -16,6 +16,7 @@ class AboutUsViewController: UIViewController {
         view.addSubview(aboutUsView)
         
         aboutUsView.viewModel = viewModel
+        
         viewModel.navigateToUserRegister = { [weak self] in
             self?.navigateToUserRegister()
         }

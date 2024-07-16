@@ -14,6 +14,7 @@ class UserRegisterView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        backgroundColor = .primaryBackgroundColor
         setupUI()
     }
     
@@ -22,6 +23,5 @@ class UserRegisterView: UIView {
     }
     
     private func setupUI() {
-        backgroundColor = .primaryBackgroundColor
     }
 }
