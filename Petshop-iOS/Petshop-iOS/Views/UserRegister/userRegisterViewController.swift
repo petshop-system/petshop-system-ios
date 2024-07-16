@@ -33,5 +33,6 @@ class userRegisterViewController: UIViewController {
     
     @objc private func backButtonTapped() {
         self.navigationController?.popViewController(animated: true)
+        print("usuário voltou pra view anterior")
     }
 }

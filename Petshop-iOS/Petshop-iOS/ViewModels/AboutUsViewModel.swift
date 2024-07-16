@@ -12,5 +12,6 @@ class AboutUsViewModel {
     
     func forwardButtonTapped() {
         navigateToUserRegister?()
+        print("usuario clicou para ir para a próxima view")
     }
 }

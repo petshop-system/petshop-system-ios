@@ -9,11 +9,17 @@ import UIKit
 
 class LoginViewController: UIViewController {
     let loginView = LoginView()
+    private let viewModel = LoginViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(loginView)
-       
+        
+        loginView.viewModel = viewModel
+        
+        viewModel.createAccount = {[weak self] in
+            self?.createAccount()
+    }
         loginView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
@@ -39,6 +45,7 @@ class LoginViewController: UIViewController {
     @objc func createAccount() {
         let aboutUsVC = AboutUsViewController()
         navigationController?.pushViewController(aboutUsVC, animated: true)
+        print("aqui o user clicou pra criar uma conta nova")
     }
     
     @objc func forgotPasswordTapped() {
