@@ -12,12 +12,12 @@ class LoginView: UIView {
     private let usernameTextField = UITextField()
     private let passwordTextField = UITextField()
     private let companyLabel = UILabel()
+    private let newUserLabel = UILabel()
     
     internal let loginButton = UIButton(type: .system)
     internal let forgotPasswordLabel = UIButton(type: .system)
     internal let newUserButton = UIButton(type: .system)
-    private let newUserLabel = UILabel()
-    
+   
     func configureLoginButton(title: String, target: Any?, action: Selector, for event: UIControl.Event) {
         loginButton.setTitle(title, for: .normal)
         loginButton.addTarget(target, action: action, for: event)

@@ -12,9 +12,10 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         view.addSubview(loginView)
+       
         loginView.translatesAutoresizingMaskIntoConstraints = false
+        
         NSLayoutConstraint.activate([
             loginView.topAnchor.constraint(equalTo: view.topAnchor),
             loginView.bottomAnchor.constraint(equalTo: view.bottomAnchor),

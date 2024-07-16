@@ -70,7 +70,6 @@
 		C5178CEC2C07386500C6038F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C5B21F152B7867CF00C257B1 /* LaunchScreen.storyboard */,
 				C5550E912B784D4A00A84CF9 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -79,9 +78,6 @@
 		C52427352C2775930070C9C9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				C5178CF72C0739F400C6038F /* LoginViewController.swift */,
-				C53BC9932C31D064005462E1 /* AboutUsViewController.swift */,
-				C5CB614F2C44B7400089FEC8 /* userRegisterViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -112,18 +108,54 @@
 				C5178CEC2C07386500C6038F /* Resources */,
 				C5178CFC2C073F8A00C6038F /* SceneDelegate.swift */,
 				C5550E882B784D4700A84CF9 /* AppDelegate.swift */,
+				C5B21F152B7867CF00C257B1 /* LaunchScreen.storyboard */,
 				C5550E962B784D4A00A84CF9 /* Info.plist */,
 			);
 			path = "Petshop-iOS";
 			sourceTree = "<group>";
 		};
-		C5B21F112B78661000C257B1 /* Views */ = {
+		C59D04892C4606F5008BE0E2 /* AboutUs */ = {
+			isa = PBXGroup;
+			children = (
+				C53BC9912C31CE59005462E1 /* AboutUsView.swift */,
+				C53BC9932C31D064005462E1 /* AboutUsViewController.swift */,
+			);
+			path = AboutUs;
+			sourceTree = "<group>";
+		};
+		C59D048A2C460708008BE0E2 /* UserRegister */ = {
 			isa = PBXGroup;
 			children = (
 				C5CB614B2C449A400089FEC8 /* UserRegisterView.swift */,
+				C5CB614F2C44B7400089FEC8 /* userRegisterViewController.swift */,
+			);
+			path = UserRegister;
+			sourceTree = "<group>";
+		};
+		C59D048B2C46071D008BE0E2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
 				C52427322C276FFE0070C9C9 /* LoginView.swift */,
-				C53BC9912C31CE59005462E1 /* AboutUsView.swift */,
+				C5178CF72C0739F400C6038F /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C59D048D2C460739008BE0E2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
 				C53BC9952C31F03E005462E1 /* CardView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C5B21F112B78661000C257B1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C59D048D2C460739008BE0E2 /* Common */,
+				C59D048B2C46071D008BE0E2 /* Login */,
+				C59D048A2C460708008BE0E2 /* UserRegister */,
+				C59D04892C4606F5008BE0E2 /* AboutUs */,
 			);
 			path = Views;
 			sourceTree = "<group>";

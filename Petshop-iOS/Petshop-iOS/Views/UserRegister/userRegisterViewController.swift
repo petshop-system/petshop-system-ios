@@ -12,8 +12,16 @@ class userRegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         view.addSubview(userRegister)
+        
+        userRegister.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            userRegister.topAnchor.constraint(equalTo: view.topAnchor),
+            userRegister.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            userRegister.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            userRegister.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ])
         
         setupBackButton()
     }

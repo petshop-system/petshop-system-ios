@@ -8,8 +8,6 @@
 import UIKit
 
 class CardView: UIView {
-    private var buttonAction: (() -> Void)?
-    
     private let cardImageContainer = UIView()
     private let cardImage = UIImageView()
     private let cardTitle = UILabel()
@@ -18,6 +16,7 @@ class CardView: UIView {
     
     private var originalCenter: CGPoint = .zero
     private var isDraggingCard: Bool = false
+    private var buttonAction: (() -> Void)?
     
     var forwardAction: (() -> Void)?
     
