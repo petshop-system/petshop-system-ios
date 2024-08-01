@@ -75,13 +75,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		C52427352C2775930070C9C9 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
 		C5550E7C2B784D4700A84CF9 = {
 			isa = PBXGroup;
 			children = (
@@ -103,7 +96,6 @@
 			children = (
 				C5CB61512C44D3C00089FEC8 /* ViewModels */,
 				C5B21F112B78661000C257B1 /* Views */,
-				C52427352C2775930070C9C9 /* ViewControllers */,
 				C501F9F02C10ED9A00AF0A47 /* Extensions */,
 				C5178CEC2C07386500C6038F /* Resources */,
 				C5178CFC2C073F8A00C6038F /* SceneDelegate.swift */,
