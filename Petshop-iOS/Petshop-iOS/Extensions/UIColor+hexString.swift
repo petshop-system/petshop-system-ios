@@ -36,5 +36,8 @@ extension UIColor {
     
     // buttons
     static let primaryButtonColor = UIColor(hex: "#42A2D9") // azul
-    static let disabledButtonColor = UIColor(hex: "#999999")
+    static let disabledButtonColor = UIColor(hex: "#999999") // cinza escuro
+    
+    // borders
+    static let primaryBorderColor = UIColor(hex:"#D9DFE6") // cinza
 }

@@ -53,22 +53,27 @@ class LoginView: UIView {
     }
     
     private func setupUI() {
+        let emailIcon = UIImageView(image: .userIcon)
+        let rightPaddingView = UIView(frame: CGRect(x: 0, y: 0, width: 40, height: emailIcon.bounds.height))
+        emailIcon.contentMode = .center
+        emailIcon.frame = rightPaddingView.bounds
+        
+        let passwordIcon = UIImageView(image: .eyeIcon)
+        let passwordRightPaddingView = UIView(frame: CGRect(x: 0, y: 0, width: 40, height: passwordIcon.bounds.height))
+        passwordIcon.contentMode = .center
+        passwordIcon.frame = passwordRightPaddingView.bounds
+        
         backgroundColor = .primaryBackgroundColor
+        
         logo.image = .logoTransparent
-        logo.translatesAutoresizingMaskIntoConstraints = false
         logo.contentMode = .scaleAspectFit
         
         usernameTextField.placeholder = "Email"
         usernameTextField.borderStyle = .roundedRect
         usernameTextField.layer.cornerRadius = 8
         usernameTextField.layer.borderWidth = 1.0
-        usernameTextField.layer.borderColor = UIColor.lightGray.cgColor
-        usernameTextField.translatesAutoresizingMaskIntoConstraints = false
-        let emailIcon = UIImageView(image: .userIcon)
-        emailIcon.contentMode = .center
-        let rightPaddingView = UIView(frame: CGRect(x: 0, y: 0, width: 40, height: emailIcon.bounds.height))
-        rightPaddingView.addSubview(emailIcon)
-        emailIcon.frame = rightPaddingView.bounds
+        usernameTextField.layer.borderColor = UIColor.primaryBorderColor.cgColor
+ 
         usernameTextField.rightView = rightPaddingView
         usernameTextField.rightViewMode = .always
         
@@ -77,18 +82,11 @@ class LoginView: UIView {
         passwordTextField.isSecureTextEntry = true
         passwordTextField.layer.cornerRadius = 8
         passwordTextField.layer.borderWidth = 1.0
-        passwordTextField.layer.borderColor = UIColor.lightGray.cgColor
-        passwordTextField.translatesAutoresizingMaskIntoConstraints = false
-        let passwordIcon = UIImageView(image: .eyeIcon)
-        passwordIcon.contentMode = .center
-        let passwordRightPaddingView = UIView(frame: CGRect(x: 0, y: 0, width: 40, height: passwordIcon.bounds.height))
-        passwordRightPaddingView.addSubview(passwordIcon)
-        passwordIcon.frame = passwordRightPaddingView.bounds
+        passwordTextField.layer.borderColor = UIColor.primaryBorderColor.cgColor
         passwordTextField.rightView = passwordRightPaddingView
         passwordTextField.rightViewMode = .always
         
         loginButton.setTitle("Entrar", for: .normal)
-        loginButton.translatesAutoresizingMaskIntoConstraints = false
         loginButton.setTitleColor(.white, for: .normal)
         loginButton.layer.cornerRadius = 15
         loginButton.backgroundColor = .primaryButtonColor
@@ -97,16 +95,21 @@ class LoginView: UIView {
         forgotPasswordLabel.setTitle("Esqueceu a senha?", for: .normal)
         forgotPasswordLabel.titleLabel?.font = UIFont.systemFont(ofSize: 16)
         forgotPasswordLabel.setTitleColor(.primaryButtonColor, for: .normal)
-        forgotPasswordLabel.translatesAutoresizingMaskIntoConstraints = false
         
         newUserLabel.text = "Ainda não tem uma conta?"
         newUserLabel.font = UIFont.systemFont(ofSize: 17)
         newUserLabel.textColor = .black
-        newUserLabel.translatesAutoresizingMaskIntoConstraints = false
-        
+  
         newUserButton.setTitle("Clique aqui", for: .normal)
         newUserButton.titleLabel?.font = UIFont.systemFont(ofSize: 17)
         newUserButton.setTitleColor(.primaryButtonColor, for: .normal)
+        
+        logo.translatesAutoresizingMaskIntoConstraints = false
+        usernameTextField.translatesAutoresizingMaskIntoConstraints = false
+        passwordTextField.translatesAutoresizingMaskIntoConstraints = false
+        loginButton.translatesAutoresizingMaskIntoConstraints = false
+        forgotPasswordLabel.translatesAutoresizingMaskIntoConstraints = false
+        newUserLabel.translatesAutoresizingMaskIntoConstraints = false
         newUserButton.translatesAutoresizingMaskIntoConstraints = false
         
         addSubview(logo)
@@ -116,6 +119,8 @@ class LoginView: UIView {
         addSubview(forgotPasswordLabel)
         addSubview(newUserLabel)
         addSubview(newUserButton)
+        passwordRightPaddingView.addSubview(passwordIcon)
+        rightPaddingView.addSubview(emailIcon)
     }
     
     private func setupConstraints() {
