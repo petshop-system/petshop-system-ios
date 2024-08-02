@@ -1,6 +1,6 @@
 # petshop-system-iOS.
 
-O aplicativo Petshop System é uma plataforma móvel que oferece uma experiência completa para proprietários de animais de estimação, permitindo o acesso a uma variedade de recursos úteis para gerenciar suas necessidades de cuidados com os animais.
+O aplicativo Petshop System é um app mobile que oferece uma experiência completa para pais de pet, permitindo o acesso a uma variedade de recursos úteis para gerenciar suas necessidades de cuidados com os animais.
 
 Recursos Principais:
 
