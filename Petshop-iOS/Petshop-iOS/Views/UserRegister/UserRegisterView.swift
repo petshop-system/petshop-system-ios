@@ -11,7 +11,7 @@ class UserRegisterView: UIView {
     private let userRegistrationLabel = UILabel()
     private let userRegistrationDescription = UILabel()
     private let cellphoneLabel = UILabel()
-    private let cellphoneTextField = UITextField()
+    private let phoneNumberInputView = PhoneNumberTextField()
     private let forwardButton = UIButton.forwardButton()
     
     override init(frame: CGRect) {
@@ -48,27 +48,16 @@ class UserRegisterView: UIView {
         cellphoneLabel.textColor = .thirdTextColor
         cellphoneLabel.textAlignment = .center
         
-        cellphoneTextField.borderStyle = .roundedRect
-        cellphoneTextField.text = ""
-        cellphoneTextField.font = UIFont.systemFont(ofSize: 16)
-        cellphoneTextField.keyboardType = .phonePad
-        cellphoneTextField.textAlignment = .left
-        cellphoneTextField.backgroundColor = .white
-        cellphoneTextField.layer.cornerRadius = 14
-        cellphoneTextField.layer.borderWidth = 1.0
-        cellphoneTextField.layer.borderColor = UIColor.primaryBorderColor.cgColor
-        cellphoneTextField.layer.masksToBounds = true
-        
         userRegistrationLabel.translatesAutoresizingMaskIntoConstraints = false
         userRegistrationDescription.translatesAutoresizingMaskIntoConstraints = false
         cellphoneLabel.translatesAutoresizingMaskIntoConstraints = false
-        cellphoneTextField.translatesAutoresizingMaskIntoConstraints = false
+        phoneNumberInputView.translatesAutoresizingMaskIntoConstraints = false
         forwardButton.translatesAutoresizingMaskIntoConstraints = false
         
         addSubview(userRegistrationLabel)
         addSubview(userRegistrationDescription)
         addSubview(cellphoneLabel)
-        addSubview(cellphoneTextField)
+        addSubview(phoneNumberInputView)
         addSubview(forwardButton)
     }
     
@@ -80,11 +69,11 @@ class UserRegisterView: UIView {
             cellphoneLabel.topAnchor.constraint(equalTo: topAnchor, constant: 180),
             cellphoneLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
             
-            cellphoneTextField.centerXAnchor
+            phoneNumberInputView.centerXAnchor
                 .constraint(equalTo: self.centerXAnchor),
-            cellphoneTextField.topAnchor.constraint(equalTo: cellphoneLabel.bottomAnchor, constant: 110),
-            cellphoneTextField.widthAnchor.constraint(equalToConstant: 250),
-            cellphoneTextField.heightAnchor.constraint(equalToConstant: 40),
+            phoneNumberInputView.topAnchor.constraint(equalTo: cellphoneLabel.bottomAnchor, constant: 110),
+            phoneNumberInputView.widthAnchor.constraint(equalToConstant: 250),
+            phoneNumberInputView.heightAnchor.constraint(equalToConstant: 40),
     
             userRegistrationDescription.topAnchor.constraint(equalTo: userRegistrationLabel.bottomAnchor, constant: 400 ),
             userRegistrationDescription.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),

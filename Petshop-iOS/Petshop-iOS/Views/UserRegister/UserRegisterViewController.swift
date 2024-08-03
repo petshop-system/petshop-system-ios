@@ -1,5 +1,5 @@
 //
-//  userRegisterViewController.swift
+//  UserRegisterViewController.swift
 //  Petshop-iOS
 //
 //  Created by Matheus Ferreira on 14/07/24.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class userRegisterViewController: UIViewController {
+class UserRegisterViewController: UIViewController {
     let userRegister = UserRegisterView()
     
     override func viewDidLoad() {
@@ -20,7 +20,7 @@ class userRegisterViewController: UIViewController {
             userRegister.topAnchor.constraint(equalTo: view.topAnchor),
             userRegister.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             userRegister.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            userRegister.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+            userRegister.bottomAnchor.constraint(equalTo: view.bottomAnchor),
         ])
         
         setupBackButton()

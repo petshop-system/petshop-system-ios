@@ -51,7 +51,7 @@ class AboutUsViewController: UIViewController {
     }
     
     private func navigateToUserRegister() {
-        let userRegisterVC = userRegisterViewController()
+        let userRegisterVC = UserRegisterViewController()
         navigationController?.pushViewController(userRegisterVC, animated: true)
         print("navegando para view de registro")
     }

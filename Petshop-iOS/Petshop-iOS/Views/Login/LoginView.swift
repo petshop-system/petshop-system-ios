@@ -87,7 +87,7 @@ class LoginView: UIView {
         passwordTextField.rightViewMode = .always
         
         loginButton.setTitle("Entrar", for: .normal)
-        loginButton.setTitleColor(.white, for: .normal)
+        loginButton.setTitleColor(.primaryTextColor, for: .normal)
         loginButton.layer.cornerRadius = 15
         loginButton.backgroundColor = .primaryButtonColor
         loginButton.titleLabel?.font = UIFont.systemFont(ofSize: 20)

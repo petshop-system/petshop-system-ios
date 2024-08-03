@@ -16,13 +16,12 @@
 		C53BC9962C31F03E005462E1 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53BC9952C31F03E005462E1 /* CardView.swift */; };
 		C5550E892B784D4700A84CF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5550E882B784D4700A84CF9 /* AppDelegate.swift */; };
 		C5550E922B784D4A00A84CF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5550E912B784D4A00A84CF9 /* Assets.xcassets */; };
-		C597045A2C5D7D3100976680 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59704592C5D7D2800976680 /* Country.swift */; };
-		C597045C2C5D7E5500976680 /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = C597045B2C5D7E4E00976680 /* countries.json */; };
-		C597045F2C5D7F2F00976680 /* CountryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C597045E2C5D7F2C00976680 /* CountryManager.swift */; };
+		C59704672C5DA37900976680 /* PhoneNumberInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59704662C5DA37000976680 /* PhoneNumberInputView.swift */; };
+		C597046F2C5DBBF900976680 /* CountryPickerView in Frameworks */ = {isa = PBXBuildFile; productRef = C597046E2C5DBBF900976680 /* CountryPickerView */; };
 		C5B21F162B7867CF00C257B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B21F152B7867CF00C257B1 /* LaunchScreen.storyboard */; };
 		C5CB614C2C449A490089FEC8 /* UserRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CB614B2C449A400089FEC8 /* UserRegisterView.swift */; };
 		C5CB614E2C44A0160089FEC8 /* UIButton+ForwardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CB614D2C449FE50089FEC8 /* UIButton+ForwardButton.swift */; };
-		C5CB61502C44B7400089FEC8 /* userRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CB614F2C44B7400089FEC8 /* userRegisterViewController.swift */; };
+		C5CB61502C44B7400089FEC8 /* UserRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CB614F2C44B7400089FEC8 /* UserRegisterViewController.swift */; };
 		C5CB61532C44D3CF0089FEC8 /* AboutUsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CB61522C44D3CE0089FEC8 /* AboutUsViewModel.swift */; };
 		C5CB61552C44E8C20089FEC8 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CB61542C44E8BE0089FEC8 /* LoginViewModel.swift */; };
 		C5F49DA02C32270A00B01A07 /* UIBar+backButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F49D9F2C32270A00B01A07 /* UIBar+backButton.swift */; };
@@ -40,13 +39,11 @@
 		C5550E882B784D4700A84CF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5550E912B784D4A00A84CF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5550E962B784D4A00A84CF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C59704592C5D7D2800976680 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
-		C597045B2C5D7E4E00976680 /* countries.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
-		C597045E2C5D7F2C00976680 /* CountryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryManager.swift; sourceTree = "<group>"; };
+		C59704662C5DA37000976680 /* PhoneNumberInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberInputView.swift; sourceTree = "<group>"; };
 		C5B21F152B7867CF00C257B1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5CB614B2C449A400089FEC8 /* UserRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegisterView.swift; sourceTree = "<group>"; };
 		C5CB614D2C449FE50089FEC8 /* UIButton+ForwardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+ForwardButton.swift"; sourceTree = "<group>"; };
-		C5CB614F2C44B7400089FEC8 /* userRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userRegisterViewController.swift; sourceTree = "<group>"; };
+		C5CB614F2C44B7400089FEC8 /* UserRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegisterViewController.swift; sourceTree = "<group>"; };
 		C5CB61522C44D3CE0089FEC8 /* AboutUsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewModel.swift; sourceTree = "<group>"; };
 		C5CB61542C44E8BE0089FEC8 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		C5F49D9F2C32270A00B01A07 /* UIBar+backButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBar+backButton.swift"; sourceTree = "<group>"; };
@@ -57,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C597046F2C5DBBF900976680 /* CountryPickerView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +74,6 @@
 		C5178CEC2C07386500C6038F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C597045B2C5D7E4E00976680 /* countries.json */,
 				C5550E912B784D4A00A84CF9 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -118,7 +115,6 @@
 		C59704582C5D7CF400976680 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C59704592C5D7D2800976680 /* Country.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -126,7 +122,6 @@
 		C597045D2C5D7F2600976680 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				C597045E2C5D7F2C00976680 /* CountryManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -144,7 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				C5CB614B2C449A400089FEC8 /* UserRegisterView.swift */,
-				C5CB614F2C44B7400089FEC8 /* userRegisterViewController.swift */,
+				C5CB614F2C44B7400089FEC8 /* UserRegisterViewController.swift */,
 			);
 			path = UserRegister;
 			sourceTree = "<group>";
@@ -161,6 +156,7 @@
 		C59D048D2C460739008BE0E2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				C59704662C5DA37000976680 /* PhoneNumberInputView.swift */,
 				C53BC9952C31F03E005462E1 /* CardView.swift */,
 			);
 			path = Common;
@@ -203,6 +199,7 @@
 			);
 			name = "Petshop-iOS";
 			packageProductDependencies = (
+				C597046E2C5DBBF900976680 /* CountryPickerView */,
 			);
 			productName = "Petshop-iOS";
 			productReference = C5550E852B784D4700A84CF9 /* Petshop-iOS.app */;
@@ -234,6 +231,7 @@
 			);
 			mainGroup = C5550E7C2B784D4700A84CF9;
 			packageReferences = (
+				C597046D2C5DBBF900976680 /* XCRemoteSwiftPackageReference "CountryPickerView" */,
 			);
 			productRefGroup = C5550E862B784D4700A84CF9 /* Products */;
 			projectDirPath = "";
@@ -250,7 +248,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5B21F162B7867CF00C257B1 /* LaunchScreen.storyboard in Resources */,
-				C597045C2C5D7E5500976680 /* countries.json in Resources */,
 				C5550E922B784D4A00A84CF9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,17 +263,16 @@
 				C5550E892B784D4700A84CF9 /* AppDelegate.swift in Sources */,
 				C5178CFD2C073F8A00C6038F /* SceneDelegate.swift in Sources */,
 				C52427332C276FFE0070C9C9 /* LoginView.swift in Sources */,
+				C59704672C5DA37900976680 /* PhoneNumberInputView.swift in Sources */,
 				C5CB61532C44D3CF0089FEC8 /* AboutUsViewModel.swift in Sources */,
 				C5CB614E2C44A0160089FEC8 /* UIButton+ForwardButton.swift in Sources */,
-				C597045A2C5D7D3100976680 /* Country.swift in Sources */,
 				C5CB61552C44E8C20089FEC8 /* LoginViewModel.swift in Sources */,
 				C53BC9942C31D064005462E1 /* AboutUsViewController.swift in Sources */,
 				C53BC9922C31CE59005462E1 /* AboutUsView.swift in Sources */,
 				C5CB614C2C449A490089FEC8 /* UserRegisterView.swift in Sources */,
-				C5CB61502C44B7400089FEC8 /* userRegisterViewController.swift in Sources */,
+				C5CB61502C44B7400089FEC8 /* UserRegisterViewController.swift in Sources */,
 				C53BC9962C31F03E005462E1 /* CardView.swift in Sources */,
 				C5F49DA02C32270A00B01A07 /* UIBar+backButton.swift in Sources */,
-				C597045F2C5D7F2F00976680 /* CountryManager.swift in Sources */,
 				C501F9F22C10EDAB00AF0A47 /* UIColor+hexString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,6 +495,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C597046D2C5DBBF900976680 /* XCRemoteSwiftPackageReference "CountryPickerView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kizitonwose/CountryPickerView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C597046E2C5DBBF900976680 /* CountryPickerView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C597046D2C5DBBF900976680 /* XCRemoteSwiftPackageReference "CountryPickerView" */;
+			productName = CountryPickerView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C5550E7D2B784D4700A84CF9 /* Project object */;
 }

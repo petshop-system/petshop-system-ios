@@ -1,0 +1,15 @@
+{
+  "originHash" : "1c5af4a539f3cb6d1d32a569b8fa07c08736d14c71ee295ccda1d200bbea220c",
+  "pins" : [
+    {
+      "identity" : "countrypickerview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kizitonwose/CountryPickerView.git",
+      "state" : {
+        "revision" : "6ecf22145d577411fb97c8c964df0fb5886f035f",
+        "version" : "3.3.0"
+      }
+    }
+  ],
+  "version" : 3
+}
