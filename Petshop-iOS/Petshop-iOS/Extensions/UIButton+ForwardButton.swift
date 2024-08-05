@@ -12,6 +12,7 @@ extension UIButton {
         let button = UIButton(type: .roundedRect)
         
         button.setTitle("Próximo", for: .normal)
+        button.titleLabel?.font = .notoSansMedium(size: 16)
         button.backgroundColor = .primaryButtonColor
         button.layer.cornerRadius = 14
         button.setTitleColor(.primaryTextColor, for: .normal)

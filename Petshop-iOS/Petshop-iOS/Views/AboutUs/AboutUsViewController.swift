@@ -31,7 +31,6 @@ class AboutUsViewController: UIViewController {
         ])
         
         aboutUsView.animateElements()
-        
         setupBackButton()
     }
     

@@ -29,7 +29,7 @@ class UserRegisterView: UIView {
         
         userRegistrationLabel.text = "Cadastro de Usuário"
         userRegistrationLabel.textColor = .thirdTextColor
-        userRegistrationLabel.font = UIFont.systemFont(ofSize: 16)
+        userRegistrationLabel.font = .catamaranMedium(size: 16)
         userRegistrationLabel.textAlignment = .center
         
         userRegistrationDescription.text = """
@@ -39,12 +39,12 @@ class UserRegisterView: UIView {
         """
     
         userRegistrationDescription.textAlignment = .center
-        userRegistrationDescription.font = UIFont.systemFont(ofSize: 16)
+        userRegistrationDescription.font = .notoSansMedium(size: 16)
         userRegistrationDescription.textColor = .secondaryTextColor
         userRegistrationDescription.numberOfLines = 0
         
         cellphoneLabel.text = "Número de Telefone"
-        cellphoneLabel.font = UIFont.systemFont(ofSize: 26)
+        cellphoneLabel.font = .catamaranBold(size: 26)
         cellphoneLabel.textColor = .thirdTextColor
         cellphoneLabel.textAlignment = .center
         
@@ -63,7 +63,7 @@ class UserRegisterView: UIView {
     
     private func setupConstraints() {
         NSLayoutConstraint.activate([
-            userRegistrationLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: -30),
+            userRegistrationLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: -35),
             userRegistrationLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
             
             cellphoneLabel.topAnchor.constraint(equalTo: topAnchor, constant: 180),

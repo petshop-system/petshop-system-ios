@@ -59,10 +59,8 @@ class AboutUsView: UIView {
             aboutViewBackground.centerXAnchor.constraint(equalTo: centerXAnchor, constant: 30),
             aboutViewBackground.centerYAnchor.constraint(equalTo: centerYAnchor, constant: -100),
             aboutViewBackground.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 1.2),
-            aboutViewBackground.heightAnchor.constraint(equalTo: aboutViewBackground.widthAnchor)
-        ])
+            aboutViewBackground.heightAnchor.constraint(equalTo: aboutViewBackground.widthAnchor),
         
-        NSLayoutConstraint.activate([
             cardView.topAnchor.constraint(equalTo: aboutViewBackground.bottomAnchor, constant: -80),
             cardView.leadingAnchor.constraint(equalTo: leadingAnchor),
             cardView.trailingAnchor.constraint(equalTo: trailingAnchor),
@@ -75,22 +73,32 @@ class AboutUsView: UIView {
         button.addTarget(self, action: #selector(forwardButtonTapped), for: .touchUpInside)
         
         let attributedDescription = NSMutableAttributedString(string: """
-        O Petshop-System é a plataforma que conecta você à uma rede de diferentes serviços e produtos para o seu PET.
-            
-        Para continuar, realize seu cadastro.
-        """)
-     
-            let boldFontAttribute = [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 16)]
-            
-            if let range = attributedDescription.string.range(of: "Petshop-System") {
-                let nsRange = NSRange(range, in: attributedDescription.string)
-                attributedDescription.addAttributes(boldFontAttribute, range: nsRange)
-            }
-            
-            if let range = attributedDescription.string.range(of: "PET") {
-                let nsRange = NSRange(range, in: attributedDescription.string)
-                attributedDescription.addAttributes(boldFontAttribute, range: nsRange)
-            }
+     O Petshop-System é a plataforma que conecta você à uma rede de diferentes serviços e produtos para o seu PET.
+         
+     Para continuar, realize seu cadastro.
+     """)
+        
+        let regularFontAttribute = [NSAttributedString.Key.font: UIFont.notoSansRegular(size: 17)]
+        let boldFontAttribute = [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 17)]
+        
+        attributedDescription
+            .addAttributes(
+                regularFontAttribute as [NSAttributedString.Key : Any],
+                range: NSRange(
+                    location: 0,
+                    length: attributedDescription.length
+                )
+            )
+        
+        if let range = attributedDescription.string.range(of: "Petshop-System") {
+            let nsRange = NSRange(range, in: attributedDescription.string)
+            attributedDescription.addAttributes(boldFontAttribute, range: nsRange)
+        }
+        
+        if let range = attributedDescription.string.range(of: "PET") {
+            let nsRange = NSRange(range, in: attributedDescription.string)
+            attributedDescription.addAttributes(boldFontAttribute, range: nsRange)
+        }
         
         cardView.configure(
             withTitle: "Sobre nós !",

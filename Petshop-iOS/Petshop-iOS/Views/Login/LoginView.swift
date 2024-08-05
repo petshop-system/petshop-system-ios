@@ -90,18 +90,18 @@ class LoginView: UIView {
         loginButton.setTitleColor(.primaryTextColor, for: .normal)
         loginButton.layer.cornerRadius = 15
         loginButton.backgroundColor = .primaryButtonColor
-        loginButton.titleLabel?.font = UIFont.systemFont(ofSize: 20)
+        loginButton.titleLabel?.font = .notoSansRegular(size: 20)
         
         forgotPasswordLabel.setTitle("Esqueceu a senha?", for: .normal)
-        forgotPasswordLabel.titleLabel?.font = UIFont.systemFont(ofSize: 16)
+        forgotPasswordLabel.titleLabel?.font = .notoSansRegular(size: 16)
         forgotPasswordLabel.setTitleColor(.primaryButtonColor, for: .normal)
         
         newUserLabel.text = "Ainda não tem uma conta?"
-        newUserLabel.font = UIFont.systemFont(ofSize: 17)
+        newUserLabel.font = .notoSansRegular(size: 17)
         newUserLabel.textColor = .black
   
         newUserButton.setTitle("Clique aqui", for: .normal)
-        newUserButton.titleLabel?.font = UIFont.systemFont(ofSize: 17)
+        newUserButton.titleLabel?.font = .notoSansRegular(size: 17)
         newUserButton.setTitleColor(.primaryButtonColor, for: .normal)
         
         logo.translatesAutoresizingMaskIntoConstraints = false
