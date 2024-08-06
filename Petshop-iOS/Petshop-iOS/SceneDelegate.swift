@@ -16,10 +16,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(windowScene: windowScene)
         
-        let loginViewController = LoginViewController()
+        let loginVC = LoginViewController()
+        let navigationController = UINavigationController(rootViewController: loginVC)
         
-        window?.rootViewController = loginViewController
-        
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }
 }

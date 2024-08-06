@@ -11,10 +11,13 @@
 		C5178CF82C0739F400C6038F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5178CF72C0739F400C6038F /* LoginViewController.swift */; };
 		C5178CFD2C073F8A00C6038F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5178CFC2C073F8A00C6038F /* SceneDelegate.swift */; };
 		C52427332C276FFE0070C9C9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52427322C276FFE0070C9C9 /* LoginView.swift */; };
-		C52427372C2777710070C9C9 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52427362C2777710070C9C9 /* CreateAccountView.swift */; };
+		C53BC9922C31CE59005462E1 /* AboutUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53BC9912C31CE59005462E1 /* AboutUsView.swift */; };
+		C53BC9942C31D064005462E1 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53BC9932C31D064005462E1 /* AboutUsViewController.swift */; };
+		C53BC9962C31F03E005462E1 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53BC9952C31F03E005462E1 /* CardView.swift */; };
 		C5550E892B784D4700A84CF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5550E882B784D4700A84CF9 /* AppDelegate.swift */; };
 		C5550E922B784D4A00A84CF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5550E912B784D4A00A84CF9 /* Assets.xcassets */; };
 		C5B21F162B7867CF00C257B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B21F152B7867CF00C257B1 /* LaunchScreen.storyboard */; };
+		C5F49DA02C32270A00B01A07 /* UIBar+backButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F49D9F2C32270A00B01A07 /* UIBar+backButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +25,15 @@
 		C5178CF72C0739F400C6038F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C5178CFC2C073F8A00C6038F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C52427322C276FFE0070C9C9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		C52427362C2777710070C9C9 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
+		C53BC9912C31CE59005462E1 /* AboutUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsView.swift; sourceTree = "<group>"; };
+		C53BC9932C31D064005462E1 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		C53BC9952C31F03E005462E1 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		C5550E852B784D4700A84CF9 /* Petshop-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Petshop-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5550E882B784D4700A84CF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5550E912B784D4A00A84CF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5550E962B784D4A00A84CF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5B21F152B7867CF00C257B1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C5F49D9F2C32270A00B01A07 /* UIBar+backButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBar+backButton.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				C501F9F12C10EDAB00AF0A47 /* UIColor+hexString.swift */,
+				C5F49D9F2C32270A00B01A07 /* UIBar+backButton.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -58,17 +65,11 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		C5178CED2C07389E00C6038F /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		C52427352C2775930070C9C9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				C5178CF72C0739F400C6038F /* LoginViewController.swift */,
+				C53BC9932C31D064005462E1 /* AboutUsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -95,7 +96,6 @@
 				C5B21F112B78661000C257B1 /* Views */,
 				C52427352C2775930070C9C9 /* ViewControllers */,
 				C501F9F02C10ED9A00AF0A47 /* Extensions */,
-				C5178CED2C07389E00C6038F /* Models */,
 				C5178CEC2C07386500C6038F /* Resources */,
 				C5178CFC2C073F8A00C6038F /* SceneDelegate.swift */,
 				C5550E882B784D4700A84CF9 /* AppDelegate.swift */,
@@ -108,7 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				C52427322C276FFE0070C9C9 /* LoginView.swift */,
-				C52427362C2777710070C9C9 /* CreateAccountView.swift */,
+				C53BC9912C31CE59005462E1 /* AboutUsView.swift */,
+				C53BC9952C31F03E005462E1 /* CardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -129,6 +130,8 @@
 			dependencies = (
 			);
 			name = "Petshop-iOS";
+			packageProductDependencies = (
+			);
 			productName = "Petshop-iOS";
 			productReference = C5550E852B784D4700A84CF9 /* Petshop-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -158,6 +161,8 @@
 				"pt-BR",
 			);
 			mainGroup = C5550E7C2B784D4700A84CF9;
+			packageReferences = (
+			);
 			productRefGroup = C5550E862B784D4700A84CF9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -184,11 +189,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C52427372C2777710070C9C9 /* CreateAccountView.swift in Sources */,
 				C5178CF82C0739F400C6038F /* LoginViewController.swift in Sources */,
 				C5550E892B784D4700A84CF9 /* AppDelegate.swift in Sources */,
 				C5178CFD2C073F8A00C6038F /* SceneDelegate.swift in Sources */,
 				C52427332C276FFE0070C9C9 /* LoginView.swift in Sources */,
+				C53BC9942C31D064005462E1 /* AboutUsViewController.swift in Sources */,
+				C53BC9922C31CE59005462E1 /* AboutUsView.swift in Sources */,
+				C53BC9962C31F03E005462E1 /* CardView.swift in Sources */,
+				C5F49DA02C32270A00B01A07 /* UIBar+backButton.swift in Sources */,
 				C501F9F22C10EDAB00AF0A47 /* UIColor+hexString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
