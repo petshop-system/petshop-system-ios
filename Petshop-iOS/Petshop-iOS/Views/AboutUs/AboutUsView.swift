@@ -22,8 +22,6 @@ class AboutUsView: UIView {
         cardView.translatesAutoresizingMaskIntoConstraints = false
         return cardView
     }()
-
-    private var hasAnimated = false
     
     var viewModel: AboutUsViewModel? {
         didSet {
@@ -113,17 +111,6 @@ class AboutUsView: UIView {
     
     @objc private func forwardButtonTapped() {
         viewModel?.forwardButtonTapped() 
-    }
-
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        
-        guard !hasAnimated else { return }
-        hasAnimated = true
-        
-        DispatchQueue.main.async {
-            self.animateElements()
-        }
     }
     
     public func animateElements() {

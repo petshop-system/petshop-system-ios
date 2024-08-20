@@ -73,7 +73,6 @@ class LoginView: UIView {
         usernameTextField.layer.cornerRadius = 8
         usernameTextField.layer.borderWidth = 1.0
         usernameTextField.layer.borderColor = UIColor.primaryBorderColor.cgColor
- 
         usernameTextField.rightView = rightPaddingView
         usernameTextField.rightViewMode = .always
         
