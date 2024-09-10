@@ -25,19 +25,19 @@ extension UIColor {
         self.init(red: red, green: green, blue: blue, alpha: 1.0)
     }
     
-    // backgrounds
+    // MARK: Backgrounds
     static let primaryBackgroundColor = UIColor(hex: "#FAFAFA") // branco
     static let secondaryBackgroundColor = UIColor(hex: "#42A2D9") // azul
     
-    // texts
+    // MARK: Texts
     static let primaryTextColor = UIColor(hex: "#FFFFFF") // branco
     static let secondaryTextColor = UIColor(hex:"#808B9A") // cinza
     static let thirdTextColor = UIColor(hex: "#39434F") // preto
     
-    // buttons
+    // MARK: Buttons
     static let primaryButtonColor = UIColor(hex: "#42A2D9") // azul
     static let disabledButtonColor = UIColor(hex: "#999999") // cinza escuro
     
-    // borders
+    // MARK: Borders
     static let primaryBorderColor = UIColor(hex:"#D9DFE6") // cinza
 }

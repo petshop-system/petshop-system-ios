@@ -34,7 +34,6 @@ class AboutUsView: UIView {
         setupUI()
         setupConstraints()
         configureCardView()
-        animateElements()
     }
     
     required init?(coder: NSCoder) {
@@ -58,7 +57,7 @@ class AboutUsView: UIView {
             aboutViewBackground.centerYAnchor.constraint(equalTo: centerYAnchor, constant: -100),
             aboutViewBackground.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 1.2),
             aboutViewBackground.heightAnchor.constraint(equalTo: aboutViewBackground.widthAnchor),
-        
+            
             cardView.topAnchor.constraint(equalTo: aboutViewBackground.bottomAnchor, constant: -80),
             cardView.leadingAnchor.constraint(equalTo: leadingAnchor),
             cardView.trailingAnchor.constraint(equalTo: trailingAnchor),
@@ -71,10 +70,10 @@ class AboutUsView: UIView {
         button.addTarget(self, action: #selector(forwardButtonTapped), for: .touchUpInside)
         
         let attributedDescription = NSMutableAttributedString(string: """
-     O Petshop-System é a plataforma que conecta você à uma rede de diferentes serviços e produtos para o seu PET.
-         
-     Para continuar, realize seu cadastro.
-     """)
+         O Petshop-System é a plataforma que conecta você à uma rede de diferentes serviços e produtos para o seu PET.
+             
+         Para continuar, realize seu cadastro.
+         """)
         
         let regularFontAttribute = [NSAttributedString.Key.font: UIFont.notoSansRegular(size: 17)]
         let boldFontAttribute = [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 17)]
@@ -110,15 +109,6 @@ class AboutUsView: UIView {
     }
     
     @objc private func forwardButtonTapped() {
-        viewModel?.forwardButtonTapped() 
-    }
-    
-    public func animateElements() {
-        cardView.transform = CGAffineTransform(translationX: 0, y: bounds.height)
-        
-        UIView.animate(withDuration: 1, delay: 0.2, options: .curveEaseOut, animations: {
-            self.aboutViewBackground.transform = .identity
-            self.cardView.transform = .identity
-        }, completion: nil)
+        viewModel?.forwardButtonTapped()
     }
 }
