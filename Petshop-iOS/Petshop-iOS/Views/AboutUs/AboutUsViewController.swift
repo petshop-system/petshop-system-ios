@@ -29,11 +29,16 @@ class AboutUsViewController: UIViewController {
             aboutUsView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             aboutUsView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
         ])
+        
+        aboutUsView
+            .setInitialCardViewPosition(height: CFloat(view.bounds.height))
+        
         setupBackButton()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        aboutUsView.animateElements()
     }
     
     private func setupBackButton() {

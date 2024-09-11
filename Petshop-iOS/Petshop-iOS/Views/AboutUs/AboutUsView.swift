@@ -23,6 +23,10 @@ class AboutUsView: UIView {
         return cardView
     }()
     
+    public func setInitialCardViewPosition(height: CFloat) {
+        cardView.transform = CGAffineTransform(translationX: 0, y: CGFloat(height))
+    }
+    
     var viewModel: AboutUsViewModel? {
         didSet {
             configureCardView()
@@ -34,6 +38,7 @@ class AboutUsView: UIView {
         setupUI()
         setupConstraints()
         configureCardView()
+        animateElements()
     }
     
     required init?(coder: NSCoder) {
@@ -106,6 +111,20 @@ class AboutUsView: UIView {
                 self?.viewModel?.forwardButtonTapped()
             }
         )
+    }
+    
+    public func animateElements() {
+        cardView.transform = CGAffineTransform(translationX: 0, y: bounds.height)
+        
+        UIView
+            .animate(
+                withDuration: 1.8,
+                delay: 0.1,
+                options: .curveEaseInOut,
+                animations: {
+                    self.aboutViewBackground.transform = .identity
+                    self.cardView.transform = .identity
+                }, completion: nil)
     }
     
     @objc private func forwardButtonTapped() {
