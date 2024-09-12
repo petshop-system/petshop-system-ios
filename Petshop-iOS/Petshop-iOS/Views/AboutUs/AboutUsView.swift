@@ -118,7 +118,7 @@ class AboutUsView: UIView {
         
         UIView
             .animate(
-                withDuration: 1.8,
+                withDuration: 1.0,
                 delay: 0.1,
                 options: .curveEaseInOut,
                 animations: {
