@@ -8,15 +8,15 @@
 import UIKit
 
 class LoginView: UIView {
-    private let logo = UIImageView()
-    private let usernameTextField = UITextField()
-    private let passwordTextField = UITextField()
-    private let companyLabel = UILabel()
-    private let newUserLabel = UILabel()
+    private var logo = UIImageView()
+    private var usernameTextField = UITextField()
+    private var passwordTextField = UITextField()
+    private var companyLabel = UILabel()
+    private var newUserLabel = UILabel()
     
-    internal let loginButton = UIButton(type: .system)
-    internal let forgotPasswordLabel = UIButton(type: .system)
-    internal let newUserButton = UIButton(type: .system)
+    internal var loginButton = UIButton(type: .system)
+    internal var forgotPasswordLabel = UIButton(type: .system)
+    internal var newUserButton = UIButton(type: .system)
    
     func configureLoginButton(title: String, target: Any?, action: Selector, for event: UIControl.Event) {
         loginButton.setTitle(title, for: .normal)

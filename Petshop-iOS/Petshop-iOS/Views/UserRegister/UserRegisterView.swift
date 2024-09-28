@@ -8,11 +8,11 @@
 import UIKit
 
 class UserRegisterView: UIView {
-    private let userRegistrationLabel = UILabel()
-    private let userRegistrationDescription = UILabel()
-    private let cellphoneLabel = UILabel()
+    private var userRegistrationLabel = UILabel()
+    private var userRegistrationDescription = UILabel()
+    private var cellphoneLabel = UILabel()
     private let phoneNumberInputView = PhoneNumberTextField()
-    private let forwardButton = UIButton.forwardButton()
+    private var forwardButton = UIButton.forwardButton()
     
     override init(frame: CGRect) {
         super.init(frame: frame)

@@ -11,7 +11,7 @@ import CountryPickerView
 class PhoneNumberTextField: UIView, CountryPickerViewDelegate {
     private let containerView = UIView()
     private let countryPickerView = CountryPickerView()
-    private let textField = UITextField()
+    private var textField = UITextField()
     private let padding: CGFloat = 1.0
     
     override init(frame: CGRect) {
