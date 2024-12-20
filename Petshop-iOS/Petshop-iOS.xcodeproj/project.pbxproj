@@ -19,6 +19,8 @@
 		C59704672C5DA37900976680 /* PhoneNumberInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59704662C5DA37000976680 /* PhoneNumberInputView.swift */; };
 		C597046F2C5DBBF900976680 /* CountryPickerView in Frameworks */ = {isa = PBXBuildFile; productRef = C597046E2C5DBBF900976680 /* CountryPickerView */; };
 		C5B21F162B7867CF00C257B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B21F152B7867CF00C257B1 /* LaunchScreen.storyboard */; };
+		C5C4BB642CAAE0D7001A8C1F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C4BB632CAAE0D7001A8C1F /* User.swift */; };
+		C5C4BB662CAAE0DC001A8C1F /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C4BB652CAAE0DC001A8C1F /* AuthService.swift */; };
 		C5CB614C2C449A490089FEC8 /* UserRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CB614B2C449A400089FEC8 /* UserRegisterView.swift */; };
 		C5CB614E2C44A0160089FEC8 /* UIButton+ForwardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CB614D2C449FE50089FEC8 /* UIButton+ForwardButton.swift */; };
 		C5CB61502C44B7400089FEC8 /* UserRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CB614F2C44B7400089FEC8 /* UserRegisterViewController.swift */; };
@@ -127,6 +129,8 @@
 		C5550E962B784D4A00A84CF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C59704662C5DA37000976680 /* PhoneNumberInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberInputView.swift; sourceTree = "<group>"; };
 		C5B21F152B7867CF00C257B1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C5C4BB632CAAE0D7001A8C1F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C5C4BB652CAAE0DC001A8C1F /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		C5CB614B2C449A400089FEC8 /* UserRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegisterView.swift; sourceTree = "<group>"; };
 		C5CB614D2C449FE50089FEC8 /* UIButton+ForwardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+ForwardButton.swift"; sourceTree = "<group>"; };
 		C5CB614F2C44B7400089FEC8 /* UserRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegisterViewController.swift; sourceTree = "<group>"; };
@@ -272,7 +276,7 @@
 		C5550E872B784D4700A84CF9 /* Petshop-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				C597045D2C5D7F2600976680 /* Services */,
+				C597045D2C5D7F2600976680 /* Service */,
 				C59704582C5D7CF400976680 /* Models */,
 				C5CB61512C44D3C00089FEC8 /* ViewModels */,
 				C5B21F112B78661000C257B1 /* Views */,
@@ -289,15 +293,17 @@
 		C59704582C5D7CF400976680 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C5C4BB632CAAE0D7001A8C1F /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		C597045D2C5D7F2600976680 /* Services */ = {
+		C597045D2C5D7F2600976680 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				C5C4BB652CAAE0DC001A8C1F /* AuthService.swift */,
 			);
-			path = Services;
+			path = Service;
 			sourceTree = "<group>";
 		};
 		C59D04892C4606F5008BE0E2 /* AboutUs */ = {
@@ -637,10 +643,12 @@
 				C5F137AA2C60DE7F00EB97A8 /* UIFont+Fonts.swift in Sources */,
 				C5178CF82C0739F400C6038F /* LoginViewController.swift in Sources */,
 				C5550E892B784D4700A84CF9 /* AppDelegate.swift in Sources */,
+				C5C4BB662CAAE0DC001A8C1F /* AuthService.swift in Sources */,
 				C5178CFD2C073F8A00C6038F /* SceneDelegate.swift in Sources */,
 				C52427332C276FFE0070C9C9 /* LoginView.swift in Sources */,
 				C59704672C5DA37900976680 /* PhoneNumberInputView.swift in Sources */,
 				C5CB61532C44D3CF0089FEC8 /* AboutUsViewModel.swift in Sources */,
+				C5C4BB642CAAE0D7001A8C1F /* User.swift in Sources */,
 				C5CB614E2C44A0160089FEC8 /* UIButton+ForwardButton.swift in Sources */,
 				C5CB61552C44E8C20089FEC8 /* LoginViewModel.swift in Sources */,
 				C53BC9942C31D064005462E1 /* AboutUsViewController.swift in Sources */,

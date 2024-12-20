@@ -20,6 +20,18 @@ class LoginViewController: UIViewController {
         viewModel.createAccount = {[weak self] in
             self?.createAccount()
     }
+        
+        loginView.onLogin = { [weak self] username, password in
+            self?.viewModel.authenticateUser(username: username, password: password) { result in
+                switch result {
+                    case .success(let user):
+                        print("Login bem-sucedido: \(user)")
+                    case .failure(let error):
+                        print("Erro ao fazer login: \(error.localizedDescription)")
+                }
+            }
+        }
+        
         loginView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([

@@ -17,6 +17,8 @@ class LoginView: UIView {
     internal var loginButton = UIButton(type: .system)
     internal var forgotPasswordLabel = UIButton(type: .system)
     internal var newUserButton = UIButton(type: .system)
+    
+    var onLogin: ((String, String) -> Void)?
    
     func configureLoginButton(title: String, target: Any?, action: Selector, for event: UIControl.Event) {
         loginButton.setTitle(title, for: .normal)
@@ -120,7 +122,15 @@ class LoginView: UIView {
         addSubview(newUserButton)
         passwordRightPaddingView.addSubview(passwordIcon)
         rightPaddingView.addSubview(emailIcon)
+        
+        loginButton.addTarget(self, action: #selector(loginTapped), for: .touchUpInside)
     }
+    
+    @objc private func loginTapped() {
+        guard let username = usernameTextField.text, let password = passwordTextField.text else { return }
+        onLogin?(username, password)
+    }
+
     
     private func setupConstraints() {
         NSLayoutConstraint.activate([
