@@ -17,6 +17,8 @@
 		C5550E892B784D4700A84CF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5550E882B784D4700A84CF9 /* AppDelegate.swift */; };
 		C5550E922B784D4A00A84CF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5550E912B784D4A00A84CF9 /* Assets.xcassets */; };
 		C5B21F162B7867CF00C257B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B21F152B7867CF00C257B1 /* LaunchScreen.storyboard */; };
+		C5BDF4B72E120E6E0036233A /* NewUserRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BDF4B62E120E4F0036233A /* NewUserRegisterView.swift */; };
+		C5BDF4B92E12133B0036233A /* NewUserRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BDF4B82E12133B0036233A /* NewUserRegisterViewController.swift */; };
 		C5F49DA02C32270A00B01A07 /* UIBar+backButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F49D9F2C32270A00B01A07 /* UIBar+backButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,8 @@
 		C5550E912B784D4A00A84CF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5550E962B784D4A00A84CF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5B21F152B7867CF00C257B1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C5BDF4B62E120E4F0036233A /* NewUserRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserRegisterView.swift; sourceTree = "<group>"; };
+		C5BDF4B82E12133B0036233A /* NewUserRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserRegisterViewController.swift; sourceTree = "<group>"; };
 		C5F49D9F2C32270A00B01A07 /* UIBar+backButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBar+backButton.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +72,7 @@
 		C52427352C2775930070C9C9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C5BDF4B82E12133B0036233A /* NewUserRegisterViewController.swift */,
 				C5178CF72C0739F400C6038F /* LoginViewController.swift */,
 				C53BC9932C31D064005462E1 /* AboutUsViewController.swift */,
 			);
@@ -107,6 +112,7 @@
 		C5B21F112B78661000C257B1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C5BDF4B62E120E4F0036233A /* NewUserRegisterView.swift */,
 				C52427322C276FFE0070C9C9 /* LoginView.swift */,
 				C53BC9912C31CE59005462E1 /* AboutUsView.swift */,
 				C53BC9952C31F03E005462E1 /* CardView.swift */,
@@ -193,6 +199,8 @@
 				C5550E892B784D4700A84CF9 /* AppDelegate.swift in Sources */,
 				C5178CFD2C073F8A00C6038F /* SceneDelegate.swift in Sources */,
 				C52427332C276FFE0070C9C9 /* LoginView.swift in Sources */,
+				C5BDF4B92E12133B0036233A /* NewUserRegisterViewController.swift in Sources */,
+				C5BDF4B72E120E6E0036233A /* NewUserRegisterView.swift in Sources */,
 				C53BC9942C31D064005462E1 /* AboutUsViewController.swift in Sources */,
 				C53BC9922C31CE59005462E1 /* AboutUsView.swift in Sources */,
 				C53BC9962C31F03E005462E1 /* CardView.swift in Sources */,

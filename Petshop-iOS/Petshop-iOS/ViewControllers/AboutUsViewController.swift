@@ -26,6 +26,11 @@ class AboutUsViewController: UIViewController {
         aboutUsView.animateElements()
         
         setupBackButton()
+        
+        aboutUsView.onNextTapped = { [weak self] in
+            let nextVC = NewUserRegisterViewController()
+            self?.navigationController?.pushViewController(nextVC, animated: true)
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {

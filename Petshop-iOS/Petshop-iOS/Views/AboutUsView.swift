@@ -24,6 +24,7 @@ class AboutUsView: UIView {
     }()
 
     private var hasAnimated = false
+    var onNextTapped: (() -> Void)?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -91,6 +92,12 @@ class AboutUsView: UIView {
             image: .boneIcon,
             button: button
         )
+        
+        button.addTarget(self, action: #selector(handleNextButtonTap), for: .touchUpInside)
+    }
+    
+    @objc private func handleNextButtonTap() {
+        onNextTapped?()
     }
 
     override func layoutSubviews() {

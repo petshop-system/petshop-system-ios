@@ -18,6 +18,8 @@ class CardView: UIView {
     private var originalCenter: CGPoint = .zero
     private var isDraggingCard: Bool = false
     
+    public var onButtonTapped: (() -> Void)?
+    
     public var title: String = "" {
         didSet {
             cardTitle.text = title
@@ -133,6 +135,10 @@ class CardView: UIView {
                 forwardButtonIcon.heightAnchor.constraint(equalToConstant: 18)
             ])
         }
+    
+        @objc private func handleForwardButtonTap() {
+            onButtonTapped?()
+    }
         
         private func setupPanGesture() {
             let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:)))
