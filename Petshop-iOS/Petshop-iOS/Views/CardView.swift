@@ -103,6 +103,7 @@ class CardView: UIView {
             forwardButtonIcon.contentMode = .scaleAspectFit
             forwardButtonIcon.translatesAutoresizingMaskIntoConstraints = false
             addSubview(forwardButtonIcon)
+            forwardButton.addTarget(self, action: #selector(handleForwardButtonTap), for: .touchUpInside)
             
             NSLayoutConstraint.activate([
                 cardImageContainer.centerXAnchor.constraint(equalTo: centerXAnchor),

@@ -23,7 +23,7 @@ class LoginView: UIView {
         setupConstraints()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required init?(coder Decoder: NSCoder) {
         fatalError("(init(coder:) has not been implemented")
     }
     

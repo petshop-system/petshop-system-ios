@@ -93,7 +93,9 @@ class AboutUsView: UIView {
             button: button
         )
         
-        button.addTarget(self, action: #selector(handleNextButtonTap), for: .touchUpInside)
+        cardView.onButtonTapped = { [weak self] in
+            self?.handleNextButtonTap()
+        }
     }
     
     @objc private func handleNextButtonTap() {

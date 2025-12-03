@@ -1,7 +1,6 @@
 import UIKit
 
 class NewUserRegisterView: UIView {
-    let title = UILabel()
     let registerView = UIView()
     let cellphoneInputView = UIView()
     let advanceButton = UIButton()
@@ -12,18 +11,12 @@ class NewUserRegisterView: UIView {
         setupConstraints()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required init?(coder Decoder: NSCoder) {
         fatalError("(init(coder:) has not been implemented")
     }
     
     private func setupUI(){
-        backgroundColor = .systemBackground
-        
-        title.text = "Cadastro de Usuário"
-        title.textAlignment = .center
-        title.translatesAutoresizingMaskIntoConstraints = false
-        title.font = UIFont.systemFont(ofSize: 24, weight: .bold)
-        title.textColor = .label
+        backgroundColor = .primaryBackgroundColor
         
         registerView.backgroundColor = .lightGray
         registerView.translatesAutoresizingMaskIntoConstraints = false
@@ -31,14 +24,13 @@ class NewUserRegisterView: UIView {
         cellphoneInputView.backgroundColor = .gray
         cellphoneInputView.translatesAutoresizingMaskIntoConstraints = false
         
-        advanceButton.setTitle("Avançar", for: .normal)
-        advanceButton.backgroundColor = .systemBlue
+        advanceButton.setTitle("Continuar", for: .normal)
+        advanceButton.backgroundColor = .primaryButtonColor
         advanceButton.setTitleColor(.white, for: .normal)
         advanceButton.layer.cornerRadius = 8
         advanceButton.translatesAutoresizingMaskIntoConstraints = false
         advanceButton.addTarget(self, action: #selector(advanceButtonTapped), for: .touchUpInside)
         
-        addSubview(title)
         addSubview(registerView)
         addSubview(cellphoneInputView)
         addSubview(advanceButton)
@@ -46,10 +38,7 @@ class NewUserRegisterView: UIView {
     
     private func setupConstraints(){
         NSLayoutConstraint.activate([
-            title.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 40),
-            title.centerXAnchor.constraint(equalTo: centerXAnchor),
-            
-            registerView.topAnchor.constraint(equalTo: title.bottomAnchor, constant: 40),
+            registerView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 80),
             registerView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
             registerView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
             registerView.heightAnchor.constraint(equalToConstant: 100),
