@@ -3,7 +3,7 @@ import UIKit
 class NewUserRegisterView: UIView {
     let registerView = UIView()
     let cellphoneInputView = UIView()
-    let advanceButton = UIButton()
+    let advanceButton = ForwardButton(title: "Continuar")
     
     override init(frame: CGRect){
         super .init(frame: frame)
@@ -23,13 +23,6 @@ class NewUserRegisterView: UIView {
         
         cellphoneInputView.backgroundColor = .gray
         cellphoneInputView.translatesAutoresizingMaskIntoConstraints = false
-        
-        advanceButton.setTitle("Continuar", for: .normal)
-        advanceButton.backgroundColor = .primaryButtonColor
-        advanceButton.setTitleColor(.white, for: .normal)
-        advanceButton.layer.cornerRadius = 8
-        advanceButton.translatesAutoresizingMaskIntoConstraints = false
-        advanceButton.addTarget(self, action: #selector(advanceButtonTapped), for: .touchUpInside)
         
         addSubview(registerView)
         addSubview(cellphoneInputView)

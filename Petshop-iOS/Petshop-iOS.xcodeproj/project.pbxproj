@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		307A7F7A2EE2132600614737 /* ForwardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A7F792EE2130000614737 /* ForwardButton.swift */; };
 		C501F9F22C10EDAB00AF0A47 /* UIColor+hexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C501F9F12C10EDAB00AF0A47 /* UIColor+hexString.swift */; };
 		C5178CF82C0739F400C6038F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5178CF72C0739F400C6038F /* LoginViewController.swift */; };
 		C5178CFD2C073F8A00C6038F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5178CFC2C073F8A00C6038F /* SceneDelegate.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		307A7F792EE2130000614737 /* ForwardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForwardButton.swift; sourceTree = "<group>"; };
 		C501F9F12C10EDAB00AF0A47 /* UIColor+hexString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hexString.swift"; sourceTree = "<group>"; };
 		C5178CF72C0739F400C6038F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C5178CFC2C073F8A00C6038F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +53,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		307A7F782EE212EF00614737 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				307A7F792EE2130000614737 /* ForwardButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		C501F9F02C10ED9A00AF0A47 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +108,7 @@
 		C5550E872B784D4700A84CF9 /* Petshop-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				307A7F782EE212EF00614737 /* Components */,
 				C5B21F112B78661000C257B1 /* Views */,
 				C52427352C2775930070C9C9 /* ViewControllers */,
 				C501F9F02C10ED9A00AF0A47 /* Extensions */,
@@ -198,6 +209,7 @@
 				C5178CF82C0739F400C6038F /* LoginViewController.swift in Sources */,
 				C5550E892B784D4700A84CF9 /* AppDelegate.swift in Sources */,
 				C5178CFD2C073F8A00C6038F /* SceneDelegate.swift in Sources */,
+				307A7F7A2EE2132600614737 /* ForwardButton.swift in Sources */,
 				C52427332C276FFE0070C9C9 /* LoginView.swift in Sources */,
 				C5BDF4B92E12133B0036233A /* NewUserRegisterViewController.swift in Sources */,
 				C5BDF4B72E120E6E0036233A /* NewUserRegisterView.swift in Sources */,

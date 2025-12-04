@@ -33,7 +33,7 @@ class NewUserRegisterViewController: UIViewController {
     private func setupTitle() {
         let titleLabel = UILabel()
         titleLabel.text = "Cadastro de Usuário"
-        titleLabel.font = UIFont.boldSystemFont(ofSize: 24)
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 22)
         titleLabel.textColor = .primaryButtonColor
         titleLabel.textAlignment = .center
         
